@@ -17,6 +17,12 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
+
+  .config(function($httpProvider) {
+    $httpProvider.defaults.useXDomain = true;
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+  })
+
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -28,6 +34,10 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
+      })
+      .when('/volunteers', {
+        templateUrl: 'views/volunteers.html',
+        controller: 'VolunteersCtrl'
       })
       .otherwise({
         redirectTo: '/'
