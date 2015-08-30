@@ -18,10 +18,10 @@ angular
     'ngTouch'
   ])
 
-  .config(function($httpProvider) {
-    $httpProvider.defaults.useXDomain = true;
-    delete $httpProvider.defaults.headers.common['X-Requested-With'];
-  })
+  // .config(function($httpProvider) {
+  //   $httpProvider.defaults.useXDomain = true;
+  //   delete $httpProvider.defaults.headers.common['X-Requested-With'];
+  // })
 
   .config(function ($routeProvider) {
     $routeProvider
@@ -38,6 +38,15 @@ angular
       .when('/volunteers', {
         templateUrl: 'views/volunteers.html',
         controller: 'VolunteersCtrl'
+      })
+       .when('/event_search', {
+        templateUrl: 'views/volunteers/event_search.html',
+        controller: 'CategoriesCtrl'
+      })
+      .when('/about', {
+        templateUrl: 'views/about.html',
+        controller: 'AboutCtrl',
+        controllerAs: 'about'
       })
       .otherwise({
         redirectTo: '/'

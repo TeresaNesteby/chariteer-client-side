@@ -21,9 +21,10 @@ angular.module('chariteerAngularApp')
 
     // });
 
+
     $http({
       method: 'GET',
-      url: 'http://localhost:3000/Api/volunteers/1',
+      url: 'http://localhost:3000/api/volunteers',
       dataType: 'jsonp'
     })
     .success(function(response) {
