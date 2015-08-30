@@ -1,0 +1,25 @@
+
+
+<h4>I want to volunteer for: .....</h4>
+<!-- Style horizontally later! -->
+
+    <div class="buttons">
+      <!--  <div ng-controller="CategoriesCtrl as cat"> -->
+      <ul>
+        <!-- Q: How to associate appropriate category_id & events a/w category_id with the click of a button? -->
+        <li ng-repeat="show in categories"><button ng-click="findEventsByCategory">{{show.type}}</button></li>
+      </ul>
+
+
+<h1>{{banana}}</h1>
+
+
+
+      <!-- <button ng-click="healthCategories()">{{health}}</button>
+      <button ng-click="kidsCategories()">{{kids}}</button>
+      <button ng-click="humanRightsCategories()">{{human_rights}}</button>
+      <button ng-click="sportsCategories()">{{sports}}</button> -->
+    </div>
+
+
+<!--   </div> -->
