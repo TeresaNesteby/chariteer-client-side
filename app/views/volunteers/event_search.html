@@ -12,7 +12,7 @@
             <!--  <div ng-controller="CategoriesCtrl as cat"> -->
             <ul>
               <!-- Q: How to associate appropriate category_id & events a/w category_id with the click of a button? -->
-              <li ng-repeat="show in categories"><button ng-click="findEventsByCategory">{{show.type}}</button></li>
+              <li ng-repeat="type in cat.categories_arr"><button ng-click="findEventsByCategory">{{type.category_type}}</button></li>
             </ul>
 
 
