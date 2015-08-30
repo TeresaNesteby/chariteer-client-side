@@ -25,30 +25,37 @@ angular
 
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
+      .when('/sessions/login', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+      .when('/sessions/logout', {
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
       })
-      .when('/volunteers', {
-        templateUrl: 'views/volunteers.html',
-        controller: 'VolunteersCtrl'
+      .when('/volunteers/new', {
+        templateUrl: 'views/new.html',
+        controller: 'VolunteersCtrl',
+        controllerAs: 'vol'
       })
-       .when('/event_search', {
+      .when('/volunteers/profile', {
+        templateUrl: 'views/volunteer_profile.html',
+        controller: 'VolunteersCtrl',
+        controllerAs: 'vol'
+      })
+       .when('/categories/events/search', {
         templateUrl: 'views/volunteers/event_search.html',
-        controller: 'CategoriesCtrl'
+        controller: 'CategoriesCtrl',
+        controllerAs: 'cat'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+       .when('/categories/events/results', {
+        templateUrl: 'views/volunteers/event_search_results.html',
+        controller: 'CategoriesCtrl',
+        controllerAs: 'cat'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/sessions/login'
       });
   });
