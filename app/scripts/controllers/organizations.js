@@ -12,12 +12,7 @@ angular.module('chariteerAngularApp')
 
     // $scope.organizations = Organization.query();
 
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-
+    $scope.banana="organization 1";
 
     var controller = this;
     $http({
@@ -32,7 +27,5 @@ angular.module('chariteerAngularApp')
       $scope.first_org = controller.orgs_arr[0];
 
     });
-
-    $scope.banana="organization 1";
 
   }]);

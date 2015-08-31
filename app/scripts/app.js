@@ -8,14 +8,14 @@
  *
  * Main module of the application.
  */
-var app = angular.module('chariteerAngularApp', [
+angular.module('chariteerAngularApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
     'ngTouch'
-  ]);
+  ])
 
 
   // .config(function($httpProvider) {
@@ -23,7 +23,7 @@ var app = angular.module('chariteerAngularApp', [
   //   delete $httpProvider.defaults.headers.common['X-Requested-With'];
   // })
 
-  app.config(function ($routeProvider) {
+  .config(function ($routeProvider) {
     $routeProvider
       .when('/sessions/login', {
         templateUrl: 'views/main.html',

@@ -1,0 +1,29 @@
+<div>
+  <h2>New Event Form</h2>
+  <!-- <div ng-show="vol.error">{{vol.error}}</div> -->
+  <form name="form" ng-submit="events.createNewEvent">
+    <div ng-class="{ 'has-error': form.first_name.$dirty && form.first_name.$error.required }">
+      <label for="first_name">First Name:</label>
+      <input type="text" name="first_name" ng-model="vol.first_name" required />
+      <span ng-show="form.first_name.$dirty && form.first_name.$error.required" class="help-block">First name is required.</span>
+    </div>
+
+    <div ng-class="{ 'has-error': form.last_name.$dirty && form.last_name.$error.required }">
+      <label for="last_name">Last Name:</label>
+      <input type="text" name="last_name" ng-model="vol.last_name" required />
+      <span ng-show="form.last_name.$dirty && form.last_name.$error.required" class="help-block">Last name is required.</span>
+    </div>
+
+    <div ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
+      <label for="password">Password</label>
+      <input type="password" name="password" ng-model="vol.password" required />
+      <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+    </div>
+
+    <div>
+      <button type="submit">Sign Up</button>
+      <a href="#/login">Already a member? Sign in</a>
+    </div>
+
+  </form>
+</div>
