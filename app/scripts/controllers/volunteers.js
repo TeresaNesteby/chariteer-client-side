@@ -15,6 +15,8 @@ angular.module('chariteerAngularApp')
       'Karma'
     ];
 
+
+
     $http({
       method: 'GET',
       url: 'http://localhost:3000/api/volunteers',

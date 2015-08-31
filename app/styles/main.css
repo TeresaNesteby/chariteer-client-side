@@ -98,6 +98,7 @@ body {
 ul {
   list-style-type: none;
   display: inline;
+
 }
 
 li > a {
@@ -146,6 +147,105 @@ html {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+/* EVENT_SEARCH ################################################*/
+ul li {
+  list-style-type: none;
+  display: inline;
+
+}
+
+.cat-buttons {
+  height: 100px;
+  width: 100px;
+  margin: 30px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 2px 2px;
+  background: radial-gradient(aqua, blue);
+}
+
+.cat-buttons:hover {
+  background-color: blue;
+}
+
+
+
+/*.cat-container {
+  width: 210px;
+  height: 140px;
+  position: relative;
+  perspective: 1000px;
+}
+
+#carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+#carousel figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 186px;
+  height: 116px;
+  left: 10px;
+  top: 10px;
+  border: 2px solid black;
+}
+
+#carousel figure:nth-child(1) { transform: rotateY(   0deg ) translateZ ( 288px );}
+#carousel figure:nth-child(2) { transform: rotateY(  40deg ) translateZ ( 288px ); }
+#carousel figure:nth-child(3) { transform: rotateY(  80deg ) translateZ ( 288px ); }
+#carousel figure:nth-child(4) { transform: rotateY( 120deg ) translateZ ( 288px ); }
+#carousel figure:nth-child(5) { transform: rotateY( 160deg ) translateZ ( 288px ); }
+#carousel figure:nth-child(6) { transform: rotateY( 200deg ) translateZ ( 288px ); }
+#carousel figure:nth-child(7) { transform: rotateY( 240deg ) translateZ ( 288px ); }
+#carousel figure:nth-child(8) { transform: rotateY( 280deg ) translateZ ( 288px ); }
+#carousel figure:nth-child(9) { transform: rotateY( 320deg ) translateZ ( 288px ); }*/
+
+
+
+
+
+
+/*####################################################*/
+
+.debug {
+  border: 1px solid red;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+/*#######################################################
+
+    trg - tiny responsive grid
+    author: j. ky marsh
+    github: https://github.com/jkymarsh
+    version: 1.0
+
+
+/*
+    http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+.container,
+.row,
+.col {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 
 /*
     https://css-tricks.com/snippets/css/clear-fix/
