@@ -36,7 +36,7 @@ angular
         controllerAs: 'main'
       })
       .when('/volunteers/new', {
-        templateUrl: 'views/new.html',
+        templateUrl: 'views/volunteers/new.html',
         controller: 'VolunteersCtrl',
         controllerAs: 'vol'
       })
