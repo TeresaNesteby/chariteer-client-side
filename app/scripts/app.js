@@ -41,7 +41,7 @@ angular
         controllerAs: 'vol'
       })
       .when('/volunteers/profile', {
-        templateUrl: 'views/volunteer_profile.html',
+        templateUrl: 'views/volunteers/volunteer_profile.html',
         controller: 'VolunteersCtrl',
         controllerAs: 'vol'
       })
