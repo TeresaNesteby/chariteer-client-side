@@ -1,33 +1,46 @@
 
 <div class="row debug">
-  <div class="col span-3-d debug"></div>
-  <div class="col span-6-d debug">
+
 
 
       <h4>I want to volunteer for: .....</h4>
       <!-- Style horizontally later! -->
 
-          <div class="buttons">
-            <!--  <div ng-controller="CategoriesCtrl as cat"> -->
-            <ul>
-              <!-- Q: How to associate appropriate category_id & events a/w category_id with the click of a button? -->
-              <li ng-repeat="type in cat.categories_arr"><button ng-click="findEventsByCategory">{{type.category_type}}</button></li>
-            </ul>
+  <div class="col span-12-d debug">
 
 
-            <h1>{{banana}}</h1>
+      <h4>I want to volunteer for: .....</h4>
+
+      <div class="buttons">
+        <ul>
+          <li ng-repeat="type in cat.categories_arr"><button ng-click="findEventsByCategory" class="cat-buttons">{{type.category_type}}</button></li>
+        </ul>
+      </div>
 
 
 
-      <!-- <button ng-click="healthCategories()">{{health}}</button>
+  </div>
+</div>
+
+<!--
+      <button ng-click="healthCategories()">{{health}}</button>
       <button ng-click="kidsCategories()">{{kids}}</button>
       <button ng-click="humanRightsCategories()">{{human_rights}}</button>
       <button ng-click="sportsCategories()">{{sports}}</button> -->
-          </div>
-  </div>
-  <div class="col span-3-d debug"></div>
-</div>
 
 
-
+<!-- Carousel Code: -->
+ <!--  <section class="cat-container">
+              <div id="carousel">
+                <figure>1</figure>
+                <figure>2</figure>
+                <figure>3</figure>
+                <figure>4</figure>
+                <figure>5</figure>
+                <figure>6</figure>
+                <figure>7</figure>
+                <figure>8</figure>
+                <figure>9</figure>
+              </div>
+            </section> -->
 
