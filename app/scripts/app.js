@@ -55,6 +55,11 @@ angular
         controller: 'EventsCtrl',
         controllerAs: 'events'
       })
+       .when('/orgs/profile', {
+        templateUrl: 'views/organizations/org_profile.html',
+        controller: 'OrgsCtrl',
+        controllerAs: 'orgs'
+      })
       .otherwise({
         redirectTo: '/sessions/login'
       });
