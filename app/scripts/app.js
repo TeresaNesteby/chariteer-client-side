@@ -47,14 +47,14 @@ angular
       })
        .when('/categories/events/search', {
         templateUrl: 'views/volunteers/event_search.html',
-        controller: 'CategoriesCtrl',
-        controllerAs: 'cat'
-      })
-       .when('/categories/events/results', {
-        templateUrl: 'views/volunteers/event_search_results.html',
         controller: 'EventsCtrl',
         controllerAs: 'events'
       })
+      //  .when('/categories/events/results', {
+      //   templateUrl: 'views/volunteers/event_search_results.html',
+      //   controller: 'EventsCtrl',
+      //   controllerAs: 'events'
+      // })
       .otherwise({
         redirectTo: '/sessions/login'
       });
