@@ -15,13 +15,6 @@ angular.module('chariteerAngularApp')
       'Karma'
     ];
 
-    // $http.get("http://localhost:3000/Api/volunteers/1")
-    // .success(function(response) {
-    //   console.log(response);
-
-    // });
-
-
     $http({
       method: 'GET',
       url: 'http://localhost:3000/api/volunteers',
@@ -29,10 +22,23 @@ angular.module('chariteerAngularApp')
     })
     .success(function(response) {
       console.log(response);
-
     });
 
-
     $scope.banana="volunteer 1";
+// this will post a new volunteer to the db
+    $http({
+    method: 'POST',
+    url: 'http://localhost:3000/api/volunteers',
+    dataType: 'jsonp'
+    })
+    .success(function(response) {
+      console.log(response);
+    });
+
+    $scope.signUp = function() {
+      //on submit
+      //send new volunteer params to the database
+      //redirect to the events search page
+    }
 
   });

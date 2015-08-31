@@ -48,14 +48,14 @@ angular.module('chariteerAngularApp')
       // when button clicked, store category_id in a variable
       // find events from DB a/w that category_id & return results or store results in variable -->
 
-    }
+    };
     $scope.displayEvents = function(eventsByCategory) {
 
 
       // display event: logo, description
       // append a volunteer button ("I'm In!")
       // hide all the category buttons
-    }
+    };
   });
 
 
