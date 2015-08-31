@@ -6,16 +6,23 @@
       <h4>Volunteer Categories</h4>
       <!-- Style horizontally later! -->
 
-
           <div class="buttons">
             <!--  <div ng-controller="CategoriesCtrl as cat"> -->
             <ul>
               <!-- <li ng-repeat="type in cat.categories_arr"><a ng-href="#/categories/events/results">{{type.category_type}}</a></li> -->
+
               <li>Health</li>
               <li>Animals</li>
               <li>Kids</li>
               <li>Food</li>
               <li>Human Rights</li>
+
+              <li>Health<button ng-click="findEventsByCategoryId(1)"></li>
+              <li>Animals<button ng-click="findEventsByCategoryId(2)"></li>
+              <li>Kids<button ng-click="findEventsByCategoryId(3)"></li>
+              <li>Food<button ng-click="findEventsByCategoryId(4)"></li>
+              <li>Human Rights<button ng-click="findEventsByCategoryId(5)"></li>
+
             </ul>
 
 
@@ -29,7 +36,7 @@
 
       <div class="buttons">
         <ul>
-          <li ng-repeat="type in cat.categories_arr"><button ng-click="findEventsByCategory" class="cat-buttons">{{type.category_type}}</button></li>
+          <li ng-repeat="type in cat.categories_arr"><button ng-click="findEventsByCategory_ID" class="cat-buttons">{{type.category_type}}</button></li>
         </ul>
       </div>
 
@@ -38,19 +45,34 @@
 
   </div>
 </div>
+
 <h1> I am interested in....</h1>
 <input type="text" class="form-control" ng-model="main.searchInput" />
+
+<!-- <h1> I am interested in....</h1> -->
+<input type="text" class="form-control" ng-model="events.searchInput" />
+<!-- <p>{{ events.searchInput}}</p> -->
+
 <h2>Upcoming Events: </h2>
 
 <div class="events-container">
 
-  <div class="row debug" ng-repeat="event in events.events">
+
+  <div class="row debug" ng-repeat="event in events">
    <div class="col span-3-d debug">LOGO</div>
    <div class="col span-6-d debug">{{event.name}}</div>
 
   <div class="col span-3-d debug">BUTTON</div>
 
   </div>
+
+  <div class="row debug" ng-repeat="event in events | filter:events.searchInput">
+   <div class="col span-3-d debug">LOGO</div>
+   <div class="col span-6-d debug">{{event.name}}</div>
+  <div class="col span-3-d debug"><button>I'm in!</button</div>
+
+  </div>
+
 
 <!--
       <button ng-click="healthCategories()">{{health}}</button>
