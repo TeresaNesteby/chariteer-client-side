@@ -52,8 +52,8 @@ angular
       })
        .when('/categories/events/results', {
         templateUrl: 'views/volunteers/event_search_results.html',
-        controller: 'CategoriesCtrl',
-        controllerAs: 'cat'
+        controller: 'EventsCtrl',
+        controllerAs: 'events'
       })
       .otherwise({
         redirectTo: '/sessions/login'
