@@ -1,7 +1,7 @@
 <div>
   <h2>New Volunteer Sign Up</h2>
   <!-- <div ng-show="vol.error">{{vol.error}}</div> -->
-  <form name="form" ng-submit="vol.signup()">
+  <form name="form" ng-submit="vol.signup">
     <div ng-class="{ 'has-error': form.first_name.$dirty && form.first_name.$error.required }">
       <label for="first_name">First Name:</label>
       <input type="text" name="first_name" ng-model="vol.first_name" required />
