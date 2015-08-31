@@ -8,22 +8,22 @@
  *
  * Main module of the application.
  */
-angular
-  .module('chariteerAngularApp', [
+var app = angular.module('chariteerAngularApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
     'ngTouch'
-  ])
+  ]);
+
 
   // .config(function($httpProvider) {
   //   $httpProvider.defaults.useXDomain = true;
   //   delete $httpProvider.defaults.headers.common['X-Requested-With'];
   // })
 
-  .config(function ($routeProvider) {
+  app.config(function ($routeProvider) {
     $routeProvider
       .when('/sessions/login', {
         templateUrl: 'views/main.html',
@@ -47,11 +47,6 @@ angular
       })
        .when('/categories/events/search', {
         templateUrl: 'views/volunteers/event_search.html',
-        controller: 'CategoriesCtrl',
-        controllerAs: 'cat'
-      })
-       .when('/categories/events/results', {
-        templateUrl: 'views/volunteers/event_search_results.html',
         controller: 'EventsCtrl',
         controllerAs: 'events'
       })
@@ -60,7 +55,20 @@ angular
         controller: 'OrgsCtrl',
         controllerAs: 'orgs'
       })
+
+      //  .when('/categories/events/results', {
+      //   templateUrl: 'views/volunteers/event_search_results.html',
+      //   controller: 'EventsCtrl',
+      //   controllerAs: 'events'
+      // })
+
       .otherwise({
         redirectTo: '/sessions/login'
       });
   });
+
+  // app.factory('Organization', ['$resource', function($resource) {
+  //   return $resource('/api/organizations/:id.json', null, {
+  //     'get': {method: 'GET'}
+  //   });
+  // }]);

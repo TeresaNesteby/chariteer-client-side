@@ -1,13 +1,16 @@
 <h2>Organization Profile</h2>
 
+<!-- <div ng-repeat="org in organizations">
+  <p>{{ org.name }}</p>
+</div> -->
 <div class="row debug">
   <div class="col span-12-d debug">
-    Organization Info
-        <p>Logo </p>
-        <p>Name: </p>
-        <p>Mission Statement: </p>
-        <p>Contact: </p>
-        <p>Website: </p>
+        <img ng-src="images/aquofbay.jpeg"/>
+        <p>Name: {{ first_org.name }} </p>
+        <p>Mission Statement: {{ first_org.mission_statement }} </p>
+        <p>Website: {{ first_org.website_url }} </p>
+        <p>Contact Number: {{ first_org.phone_number }} </p>
+        <p>Email: {{ first_org.email }} </p>
   </div>
 </div>
 
