@@ -8,8 +8,7 @@
  *
  * Main module of the application.
  */
-angular
-  .module('chariteerAngularApp', [
+angular.module('chariteerAngularApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -17,6 +16,7 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
+
 
   // .config(function($httpProvider) {
   //   $httpProvider.defaults.useXDomain = true;
@@ -50,12 +50,25 @@ angular
         controller: 'EventsCtrl',
         controllerAs: 'events'
       })
+       .when('/orgs/profile', {
+        templateUrl: 'views/organizations/org_profile.html',
+        controller: 'OrgsCtrl',
+        controllerAs: 'orgs'
+      })
+
       //  .when('/categories/events/results', {
       //   templateUrl: 'views/volunteers/event_search_results.html',
       //   controller: 'EventsCtrl',
       //   controllerAs: 'events'
       // })
+
       .otherwise({
         redirectTo: '/sessions/login'
       });
   });
+
+  // app.factory('Organization', ['$resource', function($resource) {
+  //   return $resource('/api/organizations/:id.json', null, {
+  //     'get': {method: 'GET'}
+  //   });
+  // }]);
