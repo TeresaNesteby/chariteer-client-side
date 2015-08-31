@@ -4,29 +4,39 @@
   <div class="col span-6-d debug">
 
 
-      <h4>I want to volunteer for: .....</h4>
+      <h4>Volunteer Categories</h4>
       <!-- Style horizontally later! -->
 
           <div class="buttons">
             <!--  <div ng-controller="CategoriesCtrl as cat"> -->
             <ul>
-              <!-- Q: How to associate appropriate category_id & events a/w category_id with the click of a button? -->
-              <li ng-repeat="type in cat.categories_arr"><button ng-click="findEventsByCategory">{{type.category_type}}</button></li>
+              <!-- <li ng-repeat="type in cat.categories_arr"><a ng-href="#/categories/events/results">{{type.category_type}}</a></li> -->
+              <li>Health</li>
+              <li>Animals</li>
+              <li>Kids</li>
+              <li>Food</li>
+              <li>Human Rights</li>
             </ul>
 
 
-            <h1>{{banana}}</h1>
 
-
-
-      <!-- <button ng-click="healthCategories()">{{health}}</button>
-      <button ng-click="kidsCategories()">{{kids}}</button>
-      <button ng-click="humanRightsCategories()">{{human_rights}}</button>
-      <button ng-click="sportsCategories()">{{sports}}</button> -->
           </div>
   </div>
   <div class="col span-3-d debug"></div>
 </div>
+<h1> I am interested in....</h1>
+<input type="text" class="form-control" ng-model="main.searchInput" />
+<h2>Upcoming Events: </h2>
+
+<div class="events-container">
+
+  <div class="row debug" ng-repeat="event in events.events">
+   <div class="col span-3-d debug">LOGO</div>
+   <div class="col span-6-d debug">{{event.name}}</div>
+
+  <div class="col span-3-d debug">BUTTON</div>
+
+  </div>
 
 
 
