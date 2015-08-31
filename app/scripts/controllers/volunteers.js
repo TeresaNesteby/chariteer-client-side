@@ -35,10 +35,10 @@ angular.module('chariteerAngularApp')
       console.log(response);
     });
 
-    $scope.signUp = function() {
+    // $scope.signUp = function() {
       //on submit
       //send new volunteer params to the database
       //redirect to the events search page
-    }
+    // }
 
   });
