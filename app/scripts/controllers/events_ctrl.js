@@ -49,22 +49,57 @@ angular.module('chariteerAngularApp')
               url: 'http://localhost:3000/api/organizations/3/events',
               dataType: 'jsonp'
             })
+
             .success(function(events) {
               // console.log(categories);
 
               console.log(events.event);
               controller.events = events.event;
+
+            .success(function(data) {
+
+              $scope.categories = data.category;
+              $scope.events = data.event;
+              $scope.organizations = data.organization;
+
             });
 
     // console.log("Categories are: ", categories());
 
+
   // console.log(controller.categories_arr());
+
+  console.log($scope.events);
 
     // $scope.banana = "inside the categories controller";
     // console.log($scope.banana);
 
 
+
     $scope.findEventsByCategory = function() {
+
+ $scope.applySearchFilter = function() {
+        var nameFilter = $scope.filters.name.toLowerCase();
+        var phoneFilter = $scope.filters.phone;
+        var cityFilter = $scope.filters.city;
+        var showAll = 0 === nameFilter.length && 0 === phoneFilter.length && 0 === cityFilter.length;
+        angular.forEach($scope.users, function(user) {
+            if (showAll) {
+                user.excludedByFilter = false;
+            } else {
+                user.excludedByFilter = (user.name.toLowerCase().indexOf(nameFilter) === -1)
+                                        || (user.phone.indexOf(phoneFilter) === -1)
+                                        || (user.city.indexOf(cityFilter) === -1);
+            }
+        });
+    }
+
+
+
+    $scope.findEventsByCategoryId = function(id) {
+      var categoryFilter = $scope.filters.category.id
+      console.log("hello" + id);
+
       return $scope.categories;
       // when button clicked, store category_id in a variable
       // find events from DB a/w that category_id & return results or store results in variable -->
