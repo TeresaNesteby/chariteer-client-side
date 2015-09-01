@@ -1,11 +1,11 @@
 <div>
-  <h2>New Event Form</h2>
+  <h2>Add a new event below...</h2>
   <!-- <div ng-show="events.error">{{events.error}}</div> -->
   <form name="form" ng-submit="events.createNewEvent">
     <div ng-class="{ 'has-error': form.name.$dirty && form.name.$error.required }">
       <div class="form-group">
-        <label for="name" class="sr-only">Name</label>
-        <input type="text" name="name" placeholder="Name" ng-model="events.name" class="form-control" required />
+        <label for="name" class="sr-only">Event Name</label>
+        <input type="text" name="name" placeholder="Event Name" ng-model="events.name" class="form-control" required />
         <span ng-show="form.name.$dirty && form.name.$error.required" class="help-block">The event needs a name.</span>
       </div>
     </div>
@@ -18,11 +18,35 @@
       </div>
     </div>
 
+    <div ng-class="{ 'has-error': form.org_name.$dirty && form.org_name.$error.required }">
+      <div class="form-group">
+        <label for="org_name" class="sr-only">Organization Name</label>
+        <input type="text" name="org_name" placeholder="Organization Name" ng-model="events.org_name" class="form-control" required />
+        <span ng-show="form.org_name.$dirty && form.org_name.$error.required" class="help-block">Enter your organization name.</span>
+      </div>
+    </div>
+
     <div ng-class="{ 'has-error': form.date.$dirty && form.date.$error.required }">
       <div class="form-group">
-        <label for="date">Date:  </label>
-        <input type="date" name="date" ng-model="events.date" required />
-        <span ng-show="form.date.$dirty && form.date.$error.required" class="help-block">date is required</span>
+        <label class="sr-only" for="date">Date</label>
+        <input placeholder="Select Date" class="form-control" type="text" onfocus="(this.type='date')" ng-model="events.date" required />
+        <span ng-show="form.date.$dirty && form.date.$error.required" class="help-block">Date is required.</span>
+      </div>
+    </div>
+
+    <div ng-class="{ 'has-error': form.times.$dirty && form.times.$error.required }">
+      <div class="form-group">
+        <label for="times" class="sr-only">Time</label>
+        <input type="text" name="times" placeholder="Times (e.g. 10AM, 10PM, 5pm-7pm, etc)" ng-model="events.times" class="form-control" required />
+        <span ng-show="form.time.$dirty && form.times.$error.required" class="help-block">When's this event happening?</span>
+      </div>
+    </div>
+
+    <div ng-class="{ 'has-error': form.num_of_volunteers_needed.$dirty && form.num_of_volunteers_needed.$error.required }">
+      <div class="form-group">
+        <label for="num_of_volunteers_needed" class="sr-only">Number of Volunteers Needed</label>
+        <input type="text" name="num_of_volunteers_needed" placeholder="Number of Volunteers Needed" ng-model="events.num_of_volunteers_needed" class="form-control" required />
+        <span ng-show="form.num_of_volunteers_needed.$dirty && form.num_of_volunteers_needed.$error.required" class="help-block">How many volunteers are needed for this event?</span>
       </div>
     </div>
 
