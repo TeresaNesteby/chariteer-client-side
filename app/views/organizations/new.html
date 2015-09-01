@@ -1,0 +1,57 @@
+<div>
+  <h2>New Organization Sign Up</h2>
+  <!-- <div ng-show="orgs.error">{{orgs.error}}</div> -->
+  <form name="form" ng-submit="orgs.signup()">
+    <div ng-class="{ 'has-error': form.name.$dirty && form.name.$error.required }">
+      <label for="name">Name:</label>
+      <input type="text" name="name" ng-model="orgs.name" required />
+      <span ng-show="form.name.$dirty && form.name.$error.required" class="help-block">Name is required.</span>
+    </div>
+
+    <div ng-class="{ 'has-error': mission_statement.$dirty && mission_statement.$error.required }">
+      <label "mission_statement">Mission Statement:</label>
+      <input type="text" name="mission_statement" ng-model="mission_statement" required />
+      <span ng-show="mission_statement.$dirty && mission_statement.$error.required" class="help-block">Mission statement is required.</span>
+    </div>
+
+    <div ng-class="{ 'has-error': phone_number.$dirty && phone_number.$error.required }">
+      <label "phone_number">Phone Number:</label>
+      <input type="text" name="phone_number" ng-model="phone_number" required />
+      <span ng-show="phone_number.$dirty && phone_number.$error.required" class="help-block">Phone Number is required.</span>
+    </div>
+
+    <div ng-class="{ 'has-error': logo_image.$dirty && logo_image.$error.required }">
+        <label "logo_image">Logo:</label>
+        <input type="text" name="logo_image" ng-model="logo_image" required />
+        <span ng-show="logo_image.$dirty && logo_image.$error.required" class="help-block">Logo is required.</span>
+      </div>
+
+     <div ng-class="{ 'has-error': website_url.$dirty && website_url.$error.required }">
+      <label "website_url">Website:</label>
+      <input type="text" name="website_url" ng-model="website_url" required />
+      <span ng-show="website_url.$dirty && website_url.$error.required" class="help-block">Website is required.</span>
+    </div>
+
+
+    <div ng-class="{ 'has-error': email.$dirty && email.$error.required }">
+      <label "email">Email:</label>
+      <input type="text" name="email" ng-model="email" required />
+      <span ng-show="email.$dirty && email.$error.required" class="help-block">Email is required.</span>
+    </div>
+
+
+    <div ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
+      <label for="password">Password</label>
+      <input type="password" name="password" ng-model="orgs.password" required />
+      <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+    </div>
+
+
+    <div>
+      <button type="submit">Sign Up</button>
+      <a href="#/main/new">Already a member? Sign in</a>
+    </div>
+
+
+  </form>
+</div>

@@ -25,12 +25,17 @@ angular.module('chariteerAngularApp', [
 
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/sessions/login', {
+      .when('/main', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/sessions/logout', {
+      .when('/main/new', {
+        templateUrl: 'views/main/new.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+      })
+      .when('/main/logout', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
@@ -50,6 +55,11 @@ angular.module('chariteerAngularApp', [
         controller: 'EventsCtrl',
         controllerAs: 'events'
       })
+       .when('/orgs/new', {
+        templateUrl: 'views/organizations/new.html',
+        controller: 'OrgsCtrl',
+        controllerAs: 'orgs'
+      })
        .when('/orgs/profile', {
         templateUrl: 'views/organizations/org_profile.html',
         controller: 'OrgsCtrl',
@@ -68,7 +78,7 @@ angular.module('chariteerAngularApp', [
       // })
 
       .otherwise({
-        redirectTo: '/sessions/login'
+        redirectTo: '/main'
       });
   });
 

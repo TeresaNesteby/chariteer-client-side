@@ -14,15 +14,34 @@
       <span ng-show="form.last_name.$dirty && form.last_name.$error.required" class="help-block">Last name is required.</span>
     </div>
 
+    <div ng-class="{ 'has-error': email.$dirty && email.$error.required }">
+      <label "email">Email:</label>
+      <input type="text" name="email" ng-model="email" required />
+      <span ng-show="email.$dirty && email.$error.required" class="help-block">Email is required.</span>
+    </div>
+
+    <div ng-class="{ 'has-error': interest.$dirty && interest.$error.required }">
+      <label "interest">Interest:</label>
+      <input type="text" name="interest" ng-model="interest" required />
+      <span ng-show="interest.$dirty && interest.$error.required" class="help-block">Interest is required.</span>
+    </div>
+
+     <div ng-class="{ 'has-error': photo_url.$dirty && photo_url.$error.required }">
+      <label "photo_url">Photo Link:</label>
+      <input type="text" name="photo_url" ng-model="photo_url" required />
+      <span ng-show="photo_url.$dirty && photo_url.$error.required" class="help-block">Photo is required.</span>
+    </div>
+
     <div ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
       <label for="password">Password</label>
       <input type="password" name="password" ng-model="vol.password" required />
       <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
     </div>
 
+
     <div>
       <button type="submit">Sign Up</button>
-      <a href="#/login">Already a member? Sign in</a>
+      <a href="#/main/new">Already a member? Sign in</a>
     </div>
 
   </form>
