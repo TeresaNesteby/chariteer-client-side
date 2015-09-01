@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name chariteerAngularApp.controller:OrgsCtrl
+ * @name chariteerAngularApp.controller:OrganizationsCtrl
  * @description
- * # OrgsCtrl
+ * # OrganizationsCtrl
  * Controller of the chariteerAngularApp
  */
 angular.module('chariteerAngularApp')
-  .controller('OrgsCtrl', ['$scope', '$http', function ($scope, $http) {
+  .controller('OrganizationsCtrl', ['$scope', '$http', function ($scope, $http) {
 
     // $scope.organizations = Organization.query();
 
@@ -28,29 +28,32 @@ angular.module('chariteerAngularApp')
 
     });
 
-
-  $scope.signUp = function(form) {
-    dataFromForm = {
-      $scope.name = orgs.name,
-      $scope.mission_statement = orgs.mission_statement,
-      $scope.phone_number = orgs.phone_number,
-      $scope.logo_image = orgs.logo_image,
-      $scope.website_url = orgs.website_url,
-      $scope.email = orgs.email,
-      $scope.password = orgs.password
+// removed the orgs.
+  $scope.signUp = function() {
+    var dataFromForm = {
+      organization: {
+        name: $scope.name,
+        mission_statement: $scope.mission_statement,
+        phone_number: $scope.phone_number,
+        logo_image: $scope.logo_image,
+        website_url: $scope.website_url,
+        email: $scope.email,
+        password: $scope.password
+      }
     }
+    console.log(dataFromForm)
+// removed the ; before .fail
     $http({
       method: 'POST',
-      url: 'http://localhost:3000/api/organizations/create',
+      url: 'http://localhost:3000/api/organizations',
       data: dataFromForm,
       dataType: 'jsonp'
     })
-    .success(function(response) {
+    .then(function(response) {
       console.log("it worked! new org was created");
+    }, function(error){
+      console.log('this did not work, here\'s why:', error)
     });
-    .fail(function(response){
-      console.log('this did not work, here\'s why:' + response)
-    });
-    }
+  }
 
-  }]);
+}]);

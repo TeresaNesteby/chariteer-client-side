@@ -57,12 +57,12 @@ angular.module('chariteerAngularApp', [
       })
        .when('/orgs/new', {
         templateUrl: 'views/organizations/new.html',
-        controller: 'OrgsCtrl',
+        controller: 'OrganizationsCtrl',
         controllerAs: 'orgs'
       })
        .when('/orgs/profile', {
         templateUrl: 'views/organizations/org_profile.html',
-        controller: 'OrgsCtrl',
+        controller: 'OrganizationsCtrl',
         controllerAs: 'orgs'
       })
       .when('/orgs/event/new', {
