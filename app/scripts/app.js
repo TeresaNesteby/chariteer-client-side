@@ -55,6 +55,11 @@ angular.module('chariteerAngularApp', [
         controller: 'OrgsCtrl',
         controllerAs: 'orgs'
       })
+      .when('/orgs/event/new', {
+        templateUrl: 'views/organizations/new_event.html',
+        controller: 'EventsCtrl',
+        controllerAs: 'events'
+      })
 
       //  .when('/categories/events/results', {
       //   templateUrl: 'views/volunteers/event_search_results.html',

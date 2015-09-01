@@ -56,7 +56,7 @@ angular.module('chariteerAngularApp')
               console.log(events.event);
               controller.events = events.event;
 
-            .success(function(data) {
+              .success(function(data) {
 
               $scope.categories = data.category;
               $scope.events = data.event;
