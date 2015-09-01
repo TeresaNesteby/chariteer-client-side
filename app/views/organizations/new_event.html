@@ -3,25 +3,31 @@
   <!-- <div ng-show="events.error">{{events.error}}</div> -->
   <form name="form" ng-submit="events.createNewEvent">
     <div ng-class="{ 'has-error': form.name.$dirty && form.name.$error.required }">
-      <label for="name">Name:</label>
-      <input type="text" name="name" ng-model="events.name" required />
-      <span ng-show="form.name.$dirty && form.name.$error.required" class="help-block">The event needs a name.</span>
+      <div class="form-group">
+        <label for="name" class="sr-only">Name</label>
+        <input type="text" name="name" placeholder="Name" ng-model="events.name" class="form-control" required />
+        <span ng-show="form.name.$dirty && form.name.$error.required" class="help-block">The event needs a name.</span>
+      </div>
     </div>
 
     <div ng-class="{ 'has-error': form.location.$dirty && form.location.$error.required }">
-      <label for="location">Location:</label>
-      <input type="text" name="location" ng-model="events.location" required />
-      <span ng-show="form.location.$dirty && form.location.$error.required" class="help-block">where's this event happening?</span>
+      <div class="form-group">
+        <label for="location" class="sr-only">Location</label>
+        <input type="text" name="location" placeholder="Location" ng-model="events.location" class="form-control" required />
+        <span ng-show="form.location.$dirty && form.location.$error.required" class="help-block">where's this event happening?</span>
+      </div>
     </div>
 
     <div ng-class="{ 'has-error': form.date.$dirty && form.date.$error.required }">
-      <label for="date">Date</label>
-      <input type="date" name="date" ng-model="events.date" required />
-      <span ng-show="form.date.$dirty && form.date.$error.required" class="help-block">date is required</span>
+      <div class="form-group">
+        <label for="date">Date:  </label>
+        <input type="date" name="date" ng-model="events.date" required />
+        <span ng-show="form.date.$dirty && form.date.$error.required" class="help-block">date is required</span>
+      </div>
     </div>
 
     <div>
-      <button type="submit">Add Event</button>
+      <button type="submit" class="btn btn-default">Add Event</button>
     </div>
 
   </form>
