@@ -396,3 +396,8 @@ html {
     .gutters-d .span-11-d { width: 91.5%; }
     .gutters-d .span-12-d { width: 100%; }
 }
+
+.form-group {
+  width: 35%;
+  margin: .5em auto;
+}
