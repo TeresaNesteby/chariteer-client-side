@@ -30,21 +30,26 @@ angular.module('chariteerAngularApp')
 
 
   $scope.signUp = function(form) {
-    data = {
+    dataFromForm = {
       $scope.name = orgs.name,
-      $scope.mission_statement = orgs.mission_statement
+      $scope.mission_statement = orgs.mission_statement,
+      $scope.phone_number = orgs.phone_number,
+      $scope.logo_image = orgs.logo_image,
+      $scope.website_url = orgs.website_url,
+      $scope.email = orgs.email,
+      $scope.password = orgs.password
     }
     $http({
       method: 'POST',
-      url: 'http://localhost:3000/api/organizations/new',
-      data: { name: 'name', }
+      url: 'http://localhost:3000/api/organizations/create',
+      data: dataFromForm,
       dataType: 'jsonp'
     })
     .success(function(response) {
-      console.log(response);
+      console.log("it worked! new org was created");
     });
     .fail(function(response){
-
+      console.log('this did not work, here\'s why:' + response)
     });
     }
 
