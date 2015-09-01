@@ -3,19 +3,23 @@
   <!-- <div ng-show="main.error">{{main.error}}</div> -->
   <form name="form" ng-submit="main.login">
     <div ng-class="{ 'has-error': form.email.$dirty && form.email.$error.required }">
-      <label for="email">Email:</label>
-      <input type="text" name="email" ng-model="main.email" required />
-      <span ng-show="form.email.$dirty && form.email.$error.required" class="help-block">Email is required.</span>
+      <div class="form-group">
+        <label class="sr-only" for="email">Email</label>
+        <input type="email" name="email" class="form-control" placeholder="Email" ng-model="main.email" required />
+        <span ng-show="form.email.$dirty && form.email.$error.required" class="help-block">Email is required.</span>
+      </div>
     </div>
 
     <div ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
-      <label for="password">Password</label>
-      <input type="password" name="password" ng-model="main.password" required />
-      <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+      <div class="form-group">
+        <label class="sr-only" for="password">Password</label>
+        <input type="password" name="password" class="form-control" placeholder="Password" ng-model="main.password" required />
+        <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+      </div>
     </div>
 
     <div>
-      <button type="submit">Login</button>
+      <button type="submit" class="btn btn-default">Login</button>
     </div>
 
   </form>
