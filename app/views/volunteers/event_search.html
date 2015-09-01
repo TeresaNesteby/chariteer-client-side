@@ -2,11 +2,11 @@
 
   <h4>Volunteer Categories</h4>
   <!-- Style horizontally later! -->
-      <div class="buttons">
-        <div ng-repeat='category in categories'>
-          <button ng-click='events.categoryId=category.id'>{{category.category_type}}</button>
+
+        <div class="buttons" ng-repeat='category in categories'>
+          <button class="cat-buttons" ng-click='events.categoryId=category.id'>{{category.category_type}}</button>
         </div>
-      </div>
+
 
   <div class="col span-12-d debug">
       <h4>I want to volunteer for: .....</h4>
@@ -27,8 +27,12 @@
 <div class="events-container">
 
   <div class="row debug" ng-repeat="event in events | filter:events.searchInput | filter: {category_id: events.categoryId}" >
-   <div class="col span-3-d debug">LOGO</div>
+   <div class="col span-3-d debug">
+      <div class="logo-container">
+         LOGO
+      </div>
+    </div>
    <div class="col span-6-d debug">{{event.name}}</div>
-  <div class="col span-3-d debug"><button>I'm in!</button</div>
+  <div class="col span-3-d debug"><button class="cat-buttons">I'm in!</button</div>
 
 </div>

@@ -12,27 +12,42 @@ body {
 }
 
 /* Custom page header */
-.header {
+/*.header {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
-}
+
+}*/
 /* Make the masthead heading the same height as the navigation */
-.header h3 {
+/*.header h3 {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
   padding-bottom: 19px;
+}*/
+
+.navbar {
+   background: linear-gradient(#EC725A, #EE9C69, white);
+   height: 75px;
+}
+
+.nav li {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  padding-top: 8px;
+}
+
+.nav li:hover{
+  background-color: #EE9C69;
+  opacity: 0.4;
 }
 
 /* Custom page footer */
 .footer {
   padding-top: 19px;
-  color: #777;
+  height: 75px;
   border-top: 1px solid #e5e5e5;
+  background: linear-gradient(white, #EE9C69, #EC725A) !important;
 }
-/*.container-narrow > hr {
-  margin: 30px 0;
-}*/
 
 /* Main marketing message and sign up button */
 .jumbotron {
@@ -66,69 +81,22 @@ body {
     padding-right: 0;
   }
   /* Space out the masthead */
-  .header {
+  /*.header {
     margin-bottom: 30px;
-  }
+  }*/
    /*Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
   }
 
 
-/*################################################
-/*nav {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
-}
+/*#####TRG###############################################################################################*/
 
-.left-nav a {
-  float: left;
-  size: 1.5em;
-}
 
-.right-nav a {
-  float: right;
-  display: inline;
-  size: 1.5em;
-}
 
-ul {
-  list-style-type: none;
-  display: inline;
 
-}
 
-li > a {
- display: inline;
- size: 1.5em;
-  text-decoration: none;
-  font-weight: bold;
-}
 
-a {
-
-}*/
-
-/*####################################################*/
-
-.debug {
-  border: 1px solid red;
-}
-
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-  }
 
 /*#######################################################
 
@@ -150,30 +118,38 @@ html {
 }
 
 /* EVENT_SEARCH ################################################*/
-ul li {
-  list-style-type: none;
+.buttons {
   display: inline;
-
 }
 
 .cat-buttons {
+  display: inline;
+  color: white;
   height: 100px;
   width: 100px;
   margin: 30px;
   border-radius: 50%;
   box-shadow: 4px 4px 2px 2px;
-  background: radial-gradient(aqua, blue);
+  background: radial-gradient(#C4E237, green);
 }
 
 .cat-buttons:hover {
-  background-color: blue;
+  color: green;
 }
 
 
 /*ORG PROFILE CONTAINER ######################*/
 
+/*UPCOMING EVENTS: ################*/
+ .logo-container {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border: 2px solid black;
+ }
 
- /*ADD NEW EVENT ####################*/
+
+ /*ADD NEW EVENT ####################
  .event-container {
   width: 200px;
   height: 200px;
@@ -191,40 +167,6 @@ ul li {
   text-align: center;
  }
 
-/*.cat-container {
-  width: 210px;
-  height: 140px;
-  position: relative;
-  perspective: 1000px;
-}
-
-#carousel {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-}
-
-#carousel figure {
-  margin: 0;
-  display: block;
-  position: absolute;
-  width: 186px;
-  height: 116px;
-  left: 10px;
-  top: 10px;
-  border: 2px solid black;
-}
-
-#carousel figure:nth-child(1) { transform: rotateY(   0deg ) translateZ ( 288px );}
-#carousel figure:nth-child(2) { transform: rotateY(  40deg ) translateZ ( 288px ); }
-#carousel figure:nth-child(3) { transform: rotateY(  80deg ) translateZ ( 288px ); }
-#carousel figure:nth-child(4) { transform: rotateY( 120deg ) translateZ ( 288px ); }
-#carousel figure:nth-child(5) { transform: rotateY( 160deg ) translateZ ( 288px ); }
-#carousel figure:nth-child(6) { transform: rotateY( 200deg ) translateZ ( 288px ); }
-#carousel figure:nth-child(7) { transform: rotateY( 240deg ) translateZ ( 288px ); }
-#carousel figure:nth-child(8) { transform: rotateY( 280deg ) translateZ ( 288px ); }
-#carousel figure:nth-child(9) { transform: rotateY( 320deg ) translateZ ( 288px ); }*/
 
 
 
