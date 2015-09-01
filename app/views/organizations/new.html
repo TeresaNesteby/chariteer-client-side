@@ -20,6 +20,11 @@
       <span ng-show="phone_number.$dirty && phone_number.$error.required" class="help-block">Phone Number is required.</span>
     </div>
 
+    <div ng-class="{ 'has-error': logo_image.$dirty && logo_image.$error.required }">
+        <label "logo_image">Logo:</label>
+        <input type="text" name="logo_image" ng-model="logo_image" required />
+        <span ng-show="logo_image.$dirty && logo_image.$error.required" class="help-block">Logo is required.</span>
+      </div>
 
      <div ng-class="{ 'has-error': website_url.$dirty && website_url.$error.required }">
       <label "website_url">Website:</label>

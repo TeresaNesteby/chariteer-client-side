@@ -28,4 +28,24 @@ angular.module('chariteerAngularApp')
 
     });
 
+
+  $scope.signUp = function(form) {
+    data = {
+      $scope.name = orgs.name,
+      $scope.mission_statement = orgs.mission_statement
+    }
+    $http({
+      method: 'POST',
+      url: 'http://localhost:3000/api/organizations/new',
+      data: { name: 'name', }
+      dataType: 'jsonp'
+    })
+    .success(function(response) {
+      console.log(response);
+    });
+    .fail(function(response){
+
+    });
+    }
+
   }]);
