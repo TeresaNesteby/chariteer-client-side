@@ -1,0 +1,22 @@
+<div>
+  <h2>Welcome Back! Login</h2>
+  <!-- <div ng-show="main.error">{{main.error}}</div> -->
+  <form name="form" ng-submit="main.login">
+    <div ng-class="{ 'has-error': form.email.$dirty && form.email.$error.required }">
+      <label for="email">Email:</label>
+      <input type="text" name="email" ng-model="main.email" required />
+      <span ng-show="form.email.$dirty && form.email.$error.required" class="help-block">Email is required.</span>
+    </div>
+
+    <div ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
+      <label for="password">Password</label>
+      <input type="password" name="password" ng-model="main.password" required />
+      <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+    </div>
+
+    <div>
+      <button type="submit">Login</button>
+    </div>
+
+  </form>
+</div>
