@@ -175,11 +175,20 @@ ul li {
 
  /*ADD NEW EVENT ####################*/
  .event-container {
-  width: 90px;
-  height: 90px;
+  width: 200px;
+  height: 200px;
   margin: 0 auto;
   border: 2px solid black;
+ }
 
+ .plus-format {
+  margin: auto;
+  margin-top: 20px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  opacity: 0.6;
+  text-align: center;
  }
 
 /*.cat-container {

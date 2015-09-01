@@ -21,22 +21,23 @@
   <div class="col span-4-d debug">
     <div class="event-container">
       <p>Add a New Event</p>
-      <span class="glyphicon glyphicon-plus" ng-click=""></span>
+      <button class="plus-format"><span class="glyphicon glyphicon-plus" ng-href="#/orgs/event/new"></span></button>
     </div>
   </div>
   <div class="col span-4-d debug">
     <div class="event-container">
        Event 2
     </div>
-    <p><span class="glyphicon glyphicon-star"></span>
-    <span class="glyphicon glyphicon-star"></span>
-    <span class="glyphicon glyphicon-star"></span>
-    <span class="glyphicon glyphicon-star"></span>
-    <span class="glyphicon glyphicon-star"></span></p>
+    <button ng-click="updateEvent">Update</button>
+    <button ng-click="deleteEvent">Delete</button>
   </div>
 
     <div class="col span-4-d debug">
+    <div class="event-container">
       Event 3
+    </div>
+    <button ng-click="updateEvent">Update</button>
+    <button ng-click="deleteEvent">Delete</button>
     </div>
   </div>
 </div>
@@ -44,12 +45,36 @@
 <h3>Past Events:</h2>
 <div class="row debug">
   <div class="col span-4-d debug">
-    Event 1
+    <div class="event-container">
+        Event 1
+    </div>
+      <p><span class="glyphicon glyphicon-star"></span>
+      <span class="glyphicon glyphicon-star"></span>
+      <span class="glyphicon glyphicon-star"></span>
+      <span class="glyphicon glyphicon-star"></span>
+      <span class="glyphicon glyphicon-star"></span></p>
   </div>
+
   <div class="col span-4-d debug">
-    Event 2
+    <div class="event-container">
+      Event 2
+    </div>
+      <p><span class="glyphicon glyphicon-star"></span>
+      <span class="glyphicon glyphicon-star"></span>
+      <span class="glyphicon glyphicon-star"></span></p>
   </div>
+
    <div class="col span-4-d debug">
-    Event 3
+    <div class="event-container">
+      Event 3
+    </div>
+      <p><span class="glyphicon glyphicon-star-empty"></span>
+      <span class="glyphicon glyphicon-star-empty"></span>
+      <span class="glyphicon glyphicon-star-empty"></span>
+      <span class="glyphicon glyphicon-star-empty"></span>
+      <span class="glyphicon glyphicon-star-empty"></span></p>
   </div>
+
 </div>
+
+
