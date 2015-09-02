@@ -48,16 +48,25 @@ nav ul {
   font-size: 60px;
   color: white;
   width: 300px;
-}
-
-nav ul li a:link {
-  width: 100px;
-  font-family: "Lato", sans-serif;
-  font-size: 22px;
-  color: #CCCCCC;
-  display: block;
   text-decoration: none;
 }
+
+.nav-right-a a:link, a:visited {
+  width: 100px;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: white;
+  display: block;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.nav-right-a a:hover, a:active {
+  font-weight: bold;
+  color: #C4E237;
+}
+
+
 /*End NavBar*/
 
 /* Footer */
