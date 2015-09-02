@@ -1,39 +1,38 @@
 <div class="row debug">
 
-  <h4>Volunteer Categories</h4>
-  <!-- Style horizontally later! -->
+  <h4>Search by Category: </h4>
 
+      <div class="buttons-container">
         <div class="buttons" ng-repeat='category in categories'>
           <button class="cat-buttons" ng-click='events.categoryId=category.id'>{{category.category_type}}</button>
         </div>
+      </div>
 
 
   <div class="col span-12-d debug">
+    <div class="specific-event-box">
       <h4>Looking for a specific event? </h4>
-
-      <div class="buttons">
         <ul>
           <li ng-repeat="type in cat.categories_arr"><button ng-click="findEventsByCategoryId" >{{type.category_type}}</button></li>
         </ul>
-      </div>
-  </div>
-</div>
-
-<!-- <h1> I am interested in....</h1> -->
-<input type="text" class="form-control search" ng-model="events.searchInput" />
-<!-- <p>{{ events.searchInput}}</p> -->
-<h2>Upcoming Events: </h2>
-
-<div class="events-container">
-
-  <div class="row debug" ng-repeat="event in events | filter:events.searchInput | filter: {category_id: events.categoryId}" >
-   <div class="col span-3-d debug">
-      <div class="logo-container">
-         LOGO
-         <img src="images/placeholder.png">
-      </div>
+        <input type="text" class="form-control search" placeholder="Search" ng-model="events.searchInput" />
     </div>
-   <div class="col span-6-d debug">{{event.name}}</div>
-  <div class="col span-3-d debug"><button class="im-in">I'm in!</button</div>
+  </div>
 
+
+        <!-- <p>{{ events.searchInput}}</p> -->
+    </div>
+<h3>Upcoming Events: </h3>
+
+<div class="row upcoming debug" ng-repeat="event in events | filter:events.searchInput | filter: {category_id: events.categoryId}" >
+  <div class="col span-3-d debug">
+    <div class="logo-container">
+        LOGO
+        <img src="images/placeholder.png">
+    </div>
+  </div>
+  <div class="col span-6-d debug">{{event.name}}</div>
+  <div class="col span-3-d debug">
+    <button class="im-in">I'm in!</button>
+  </div>
 </div>
