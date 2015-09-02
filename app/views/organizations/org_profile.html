@@ -4,16 +4,18 @@
   <p>{{ org.name }}</p>
 </div> -->
 <div class="row debug">
-  <div class="col span-12-d debug">
+  <div class="col span-3-d debug">
     <div class="org-profile">
-        <img ng-src="images/aquofbay.jpeg"/>
-        <p>{{ first_org.name }} </p>
-        <p>Mission Statement: {{ first_org.mission_statement }} </p>
-        <p>Website: {{ first_org.website_url }} </p>
-        <p>Contact Number: {{ first_org.phone_number }} </p>
-        <p>Email: {{ first_org.email }} </p>
+        <img ng-src="{{first_org.logo_image}}"/>
       </div>
-  </div>
+    </div>
+    <div class="col span-9-d debug">
+      <p class="tx-al-l"><span class="org-bio-header">Organization: </span>{{ first_org.name }} </p>
+      <p class="tx-al-l"><span class="org-bio-header">Mission Statement:</span> {{ first_org.mission_statement }}</p>
+      <p class="tx-al-l"><span class="org-bio-header">Website:</span><a ng-href="{{first_org.website.url}}"> {{ first_org.website_url }}</a> </p>
+      <p class="tx-al-l"><span class="org-bio-header">Contact Number:</span> {{ first_org.phone_number }} </p>
+      <p class="tx-al-l"><span class="org-bio-header">Email: </span> {{ first_org.email }} </p>
+    </div>
 </div>
 
 <h3>Upcoming Events:</h2>
@@ -21,7 +23,7 @@
   <div class="col span-4-d debug">
     <div class="event-container">
       <p>Add a New Event</p>
-      <button class="plus-format"><span class="glyphicon glyphicon-plus" ng-href="#/orgs/event/new"></span></button>
+      <a ng-href="#/orgs/event/new"><button class="plus-format"><span class="glyphicon glyphicon-plus"></span></button></a>
     </div>
   </div>
   <div class="col span-4-d debug">
