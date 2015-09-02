@@ -1,17 +1,30 @@
 <h2>My Profile Page</h2>
 
 <div class="row debug">
-  <div class="col span-12-d debug">
-    Volunteer Info
-        <p>Name:</p>
-        <p>Interests:</p>
+  <div class="col span-3-d debug">
+    <img src="{{vol_first.photo_url}}">
+  </div>
+  <div class="col span-9-d debug">
+
+        <h3>Name: {{vol_first.first_name}} {{vol_first.last_name}}</h3>
+        <h4>Interest: {{vol_first.interest}}</h4>
+        <h4>Email: {{vol_first.email}}</h4>
   </div>
 </div>
+
 
 <h3>Upcoming Events:</h2>
 <div class="row debug">
+  <ng-repeat="event in events | filter: {volunteer_id: 1}" >
+
   <div class="col span-4-d debug">
-    Event 1
+    <img src="{{event.image}}">
+    <h3>{{event.name}}</h3>
+    <p>{{event.org_name}}</p>
+    <p>Date: {{event.date}}</p>
+    <p>Time: {{event.time}}</p>
+    <p>Location: {{event.location}}</p>
+
   </div>
   <div class="col span-4-d debug">
     Event 2
@@ -21,18 +34,22 @@
   </div>
 </div>
 
-<h3>Past Events:</h2>
-<div class="row debug">
-  <div class="col span-4-d debug">
-    Event 1
+<div class="row upcoming debug" ng-repeat="event in events | filter: {volunteer_id: events.volunteerId}" >
+  <div class="col span-3-d debug">
+    <div class="logo-container">
+
+        <img src="{{event.image}}">
+    </div>
   </div>
-  <div class="col span-4-d debug">
-    Event 2
+  <div class="col span-6-d debug">
+
+    <h3>{{event.name}}</h3>
+    <p>{{event.org_name}}</p>
+    <p>Date: {{event.date}}</p>
+    <p>Time: {{event.time}}</p>
+    <p>Location: {{event.location}}</p>
   </div>
-   <div class="col span-4-d debug">
-    Event 3
-  </div>
-</div>
+  <div class="col span-3-d debug">
 
 
 
