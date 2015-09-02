@@ -9,9 +9,6 @@
  */
 angular.module('chariteerAngularApp')
   .controller('OrganizationsCtrl', ['$scope', '$http', function ($scope, $http) {
-
-    // $scope.organizations = Organization.query();
-
     $scope.banana="organization 1";
 
     var controller = this;
@@ -21,50 +18,11 @@ angular.module('chariteerAngularApp')
       dataType: 'jsonp'
     })
     .success(function(response) {
-      // console.log(response);
       controller.orgs_arr = response;
-      // displays first organization
       $scope.first_org = controller.orgs_arr[0];
-
     });
 
-// removed the orgs.
   $scope.signUp = function() {
-    // var dataFromForm = {
-    //   organization: {
-    //     name: $scope.name,
-    //     mission_statement: $scope.mission_statement,
-    //     phone_number: $scope.phone_number,
-    //     logo_image: $scope.logo_image,
-    //     website_url: $scope.website_url,
-    //     email: $scope.email,
-    //     non_profit: true,
-    //     password: $scope.password
-    //   }
-    // }
-    // console.log(dataFromForm)
-// removed the ; before .fail
-    // $http({
-    //   method: 'POST',
-    //   url: 'http://localhost:3000/api/organizations',
-    //   data: {organization: {
-    //     name: $scope.name,
-    //     mission_statement: $scope.mission_statement,
-    //     phone_number: $scope.phone_number,
-    //     logo_image: $scope.logo_image,
-    //     website_url: $scope.website_url,
-    //     email: $scope.email,
-    //     non_profit: true,
-    //     password: $scope.password
-    //   }},
-    //   dataType: 'jsonp'
-    // })
-    // .then(function(response) {
-    //   console.log("it worked! new org was created");
-    // }, function(response){
-    //   console.log('this did not work, here\'s why:', response)
-    // });
-    console.log($scope.name)
     $http.post('http://localhost:3000/api/organizations', {
         name: $scope.name,
         mission_statement: $scope.mission_statement,
@@ -76,10 +34,9 @@ angular.module('chariteerAngularApp')
         password: $scope.password
       })
     .then(function(response) {
-        console.log("it worked! new org was created" + $scope);
+        console.log("it worked! new org was created");
       }, function(response){
         console.log('this did not work, here\'s why:', response)
       })
   }
-
 }]);
