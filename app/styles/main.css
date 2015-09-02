@@ -142,60 +142,6 @@ nav ul {
   color: green;
 }
 
-
-/*ORG PROFILE CONTAINER ######################*/
-
-/*UPCOMING EVENTS: ################*/
-h4 {
-  font-family: 'Pacifico', cursive;
-  font-size: 26px;
-}
-
-.specific-event-box {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.upcoming {
-  border: 2px solid #cccccc;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: #EE9C69;
-  /*opacity: 0.5;*/
-}
-
- .logo-container {
-  width: 100px;
-  height: 100px;
-
-  margin: 20px auto;
-/*  border: 2px solid black;*/
-
-
-/*  background-image: url("images/placeholder.png");*/
- }
-
- .im-in {
-  height: 50px;
-  width: 50px;
-  margin: 30px;
-  border-radius: 5px;
-  box-shadow: 4px 4px 2px 2px green;
-  background: #C4E237;
-}
-
-.im-in:hover {
-  height: 60px;
-  width: 60px;
- /* box-shadow: 4px 4px 2px 2px green;*/
-}
-
-.search {
-  width: 30%;
-  margin: auto;
-}
-
-
  /*ADD NEW EVENT ####################*/
  .event-container {
   width: 200px;
@@ -391,9 +337,6 @@ html {
   margin-top: 4em;
   border-style: solid;*/
 }
-.control {
-  margin-top: 4em;
-}
 
 img {
      max-width: 100%;
@@ -404,8 +347,4 @@ img {
   float: left;
 }*/
 
-.event-search{
-  margin-top: 3em;
-  margin-bottom: 5em;
-}
 

@@ -9,9 +9,50 @@
 
 
 /*event search bar*/
+.event-search{
+  margin-top: 1em;
+}
 
+.search {
+  width: 30%;
+  margin: auto;
+}
 
+.specific-event-box {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
+/*is there anywhere besides search page?*/
+.control {
+  margin-top: 1em;
+}
 
 
 /*results*/
+.upcoming {
+  border: 2px solid #cccccc;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+ .logo-container {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+ }
+
+/*buttons to RSVP*/
+ .im-in {
+  height: 50px;
+  width: 50px;
+  margin: 30px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px 2px green;
+  background: #C4E237;
+}
+
+.im-in:hover {
+  height: 60px;
+  width: 60px;
+}
