@@ -201,9 +201,9 @@ body {
 
 /*####################################################*/
 
-.debug {
+/*.debug {
   border: 1px solid red;
-}
+}*/
 
 html {
   -webkit-box-sizing: border-box;
@@ -368,4 +368,8 @@ html {
 .form-group {
   width: 35%;
   margin: .5em auto;
+}
+
+.form-control {
+  margin-bottom: 8em;
 }

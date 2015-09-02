@@ -1,6 +1,7 @@
 <div class="row debug">
+  <h1>Search for upcoming volunteer opportunities!</h1>
 
-  <h4>Volunteer Categories</h4>
+  <h4>Search by category</h4>
   <!-- Style horizontally later! -->
 
         <div class="buttons" ng-repeat='category in categories'>
@@ -9,7 +10,7 @@
 
 
   <div class="col span-12-d debug">
-      <h4>Looking for a specific event? </h4>
+      <h4>Search by event name</h4>
 
       <div class="buttons">
         <ul>
@@ -21,8 +22,9 @@
 
 <!-- <h1> I am interested in....</h1> -->
 <input type="text" class="form-control search" ng-model="events.searchInput" />
+
 <!-- <p>{{ events.searchInput}}</p> -->
-<h2>Upcoming Events: </h2>
+<h2><u> Upcoming Events: </u></h2>
 
 <div class="events-container">
 
@@ -33,7 +35,13 @@
          <img src="images/placeholder.png">
       </div>
     </div>
-   <div class="col span-6-d debug">{{event.name}}</div>
+   <div class="col span-6-d debug"><h5>{{event.name}}</h5>
+    <p>{{event.location}}</p>
+    <p>{{event.org_name}}</p>
+    <p>{{event.date}}</p>
+    <p>{{event.time}}</p>
+    <p>{{event.num_of_volunteers_needed}}</p>
+   </div>
   <div class="col span-3-d debug"><button class="im-in">I'm in!</button</div>
 
 </div>
