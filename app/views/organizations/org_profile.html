@@ -21,17 +21,17 @@
 <h3>Upcoming Events:</h2>
 <div class="row debug">
   <div class="col span-4-d debug">
-    <div class="event-container">
-      <p>Add a New Event</p>
-      <a ng-href="#/orgs/event/new"><button class="plus-format"><span class="glyphicon glyphicon-plus"></span></button></a>
+    <div class="event-container new-event">
+      <p class="new-eventtt">Add a New Event!</p>
+        <a ng-href="#/orgs/event/new"><button class="plus-format glyphicon glyphicon-plus"></button></a>
     </div>
   </div>
   <div class="col span-4-d debug">
     <div class="event-container">
        <img ng-src="{{first_org.logo_image}}">
     </div>
-    <button ng-click="updateEvent">Update</button>
-    <button ng-click="deleteEvent">Delete</button>
+    <button ng-click="updateEvent"><span class="event-update-button">Update</button></span>
+    <button ng-click="deleteEvent"><span class="event-update-button">Delete</button></span>
   </div>
 
     <div class="col span-4-d debug">
