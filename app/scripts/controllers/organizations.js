@@ -23,15 +23,6 @@ angular.module('chariteerAngularApp')
       $scope.first_org = controller.orgs_arr[0];
     });
 
-    $http({
-      method: 'GET',
-      url: 'http://localhost:3000/api/organizations/1/events',
-      dataType: 'jsonp'
-    }).success(function(response){
-      controller.eventsArr = response;
-      console.log(controller.eventsArr)
-    });
-
   $scope.signUp = function() {
     $http.post('http://localhost:3000/api/organizations', {
         name: $scope.name,
