@@ -1,6 +1,22 @@
+* {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
 body {
   padding: 0;
   font-family: "Lato", sans-serif;
+  height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -75px;
 }
 
 /*NavBar*/
@@ -53,11 +69,15 @@ a:hover, a:active {
 
 /* Footer */
 .footer {
-  padding-top: 19px;
-  height: 75px;
   background: linear-gradient(white, #EE9C69, #EC725A) !important;
 }
 
+.footer, .push {
+  height: 75px;
+}
+
+/*End Footer*/
+/*To make footer sticky, added wrapper and push classes to index.html. In main.css, affected *, html, body, .wrapper, .footer, .push. */
 
 
 
