@@ -1,29 +1,57 @@
 <div class="row debug">
   <h1>Search for upcoming volunteer opportunities!</h1>
 
-<div class="cat-search">
+
+  <h4>Search by Category: </h4>
+
+
   <h4 class="control">Search by category</h4>
 
+
+      <div class="buttons-container">
         <div class="buttons" ng-repeat='category in categories'>
           <button class="cat-buttons" ng-click='events.categoryId=category.id'>{{category.category_type}}</button>
         </div>
-</div>
+      </div>
+
+
 
   <div class="col span-12-d debug event-search">
       <h4>Search by event name</h4>
 
- <!--      <div class="buttons">
+
+  <div class="col span-12-d debug">
+    <div class="specific-event-box">
+      <h4>Looking for a specific event? </h4>
         <ul>
           <li ng-repeat="type in cat.categories_arr"><button ng-click="findEventsByCategoryId" >{{type.category_type}}</button></li>
         </ul>
-      </div> -->
+        <input type="text" class="form-control search" placeholder="Search" ng-model="events.searchInput" />
+    </div>
+  </div>
+
+
+
+  </div>
+<h3>Upcoming Events: </h3>
+
+<div class="row upcoming debug" ng-repeat="event in events | filter:events.searchInput | filter: {category_id: events.categoryId}" >
+  <div class="col span-3-d debug">
+    <div class="logo-container">
+        LOGO
+        <img src="images/placeholder.png">
+    </div>
+  </div>
+  <div class="col span-6-d debug">{{event.name}}</div>
+  <div class="col span-3-d debug">
+    <button class="im-in">I'm in!</button>
+  </div>
+
 <input type="text" class="form-control search" ng-model="events.searchInput" />
 
 </div>
 
-<!-- <h1> I am interested in....</h1> -->
 
-<!-- <p>{{ events.searchInput}}</p> -->
 <h2><u> Upcoming Events: </u></h2>
 
 <div class="events-container">

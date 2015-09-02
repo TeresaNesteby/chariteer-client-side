@@ -14,39 +14,23 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <!-- endbuild -->
   </head>
   <body ng-app="chariteerAngularApp">
 
     <!-- Add your site or application content here -->
-
-  <!--   <div class="header debug"> -->
-      <div class="navbar navbar-default debug" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <a class="navbar-brand" href="#/">Chariteer</a>
-          </div>
-
-            <ul class="nav navbar-nav">
-
-              <li><a href="#/categories/events/search">Search</a></li>
+      <nav class="navbar" role="navigation">
+        <ul class="nav-left">
+          <li><a id="logo" ng-href="#/">Chariteer</a></li>
+        </ul>
+        <ul class="nav-right">
+          <li><a ng-href="#/sessions/logout">Logout</a></li>
+              <li><a ng-href="#/categories/events/search">Search</a></li>
               <li><a ng-href="#/volunteers/profile">Profile</a></li>
-             <!--  <li><a ng-href="#/orgs/profile">Organization Profile</a></li> -->
-
-              <li><a ng-href="#/sessions/logout">Logout</a></li>
-
             </ul>
-        </div>
-    </div>
-<!-- </div> -->
+      </nav>
+
 
     <div class="container debug">
     <div ng-view=""></div>
