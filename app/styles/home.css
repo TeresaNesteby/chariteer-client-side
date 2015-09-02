@@ -1,0 +1,39 @@
+
+/*Home (landing) page*/
+
+.home-container {
+  text-align: center;
+  border-radius: 15px;
+  margin: 40px auto;
+  border: 8px solid #9BC12A;
+  height: 350px;
+  width: 350px;
+}
+
+.words {
+  padding-top: 30px;
+}
+
+.btn {
+  font-size: 21px;
+  margin: 20px auto 20px auto;
+  background-color: #C4E237;
+  border-style: none;
+}
+
+/*.cheerleaders {
+  height: 200%;
+  width: 200%;
+  margin-bottom: 30px;
+}*/
+.cheerleader {
+  background-color: transparent;
+  height: 75%;
+  width: 75%;
+}
+.org {
+  height: 100px;
+  width: 150px;
+  margin-left: 120px;
+  margin-bottom: 50px;
+}
