@@ -1,15 +1,15 @@
 <div class="row debug">
   <h1>Search for upcoming volunteer opportunities!</h1>
 
-  <h4>Search by category</h4>
-  <!-- Style horizontally later! -->
+
+  <h4 class="control">Search by category</h4>
 
         <div class="buttons" ng-repeat='category in categories'>
           <button class="cat-buttons" ng-click='events.categoryId=category.id'>{{category.category_type}}</button>
         </div>
 
 
-  <div class="col span-12-d debug">
+  <div class="col span-12-d debug" >
       <h4>Search by event name</h4>
 
       <div class="buttons">
@@ -31,8 +31,8 @@
   <div class="row debug" ng-repeat="event in events | filter:events.searchInput | filter: {category_id: events.categoryId}" >
    <div class="col span-3-d debug">
       <div class="logo-container">
-         LOGO
-         <img src="images/placeholder.png">
+
+         <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Moose_animal_pair_bull_and_cow_moose.jpg">
       </div>
     </div>
    <div class="col span-6-d debug"><h5>{{event.name}}</h5>
