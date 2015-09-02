@@ -9,7 +9,7 @@
  */
 angular.module('chariteerAngularApp')
   .controller('EventsCtrl', function ($scope, $http, $log) {
-
+    
     $scope.events = {};
       $http({
           method: 'GET',
