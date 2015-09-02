@@ -15,16 +15,17 @@ angular.module('chariteerAngularApp')
       'Karma'
     ];
 
-
+  var controller = this;
     $http({
       method: 'GET',
       url: 'http://localhost:3000/api/volunteers',
       dataType: 'jsonp'
     })
     .success(function(response) {
+      controller.vols_arr = response;
+      // console.log(controller.orgs_arr)
+      $scope.vol_first = controller.vols_arr[0];
     });
-
-
 
     $scope.signUp = function() {
       $http.post('http://localhost:3000/api/volunteers', {
