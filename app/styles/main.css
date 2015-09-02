@@ -36,9 +36,13 @@ body {
   padding-top: 8px;
 }
 
-.nav li:hover{
+.nav li:hover {
   background-color: #EE9C69;
   opacity: 0.4;
+}
+
+.navbar-nav, .nav {
+  color: white;
 }
 
 /* Custom page footer */
@@ -146,10 +150,32 @@ body {
   height: 100px;
   margin: 0 auto;
   border: 2px solid black;
+  background-image: url("images/placeholder.png");
  }
 
+ .im-in {
+  height: 50px;
+  width: 50px;
+  margin: 30px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px 2px #9BC12A;
+  background: #C4E237;
+}
 
- /*ADD NEW EVENT ####################
+.im-in:hover {
+  box-shadow: 4px 4px 2px 2px green;
+}
+
+.search {
+  width: 25%;
+  margin: auto;
+}
+
+
+
+
+
+ /*ADD NEW EVENT ####################*/
  .event-container {
   width: 200px;
   height: 200px;
@@ -200,7 +226,7 @@ html {
 
 /*
     http://www.paulirish.com/2012/box-sizing-border-box-ftw/
-*/
+
 .container,
 .row,
 .col {

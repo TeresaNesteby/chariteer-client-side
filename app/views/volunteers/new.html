@@ -34,14 +34,6 @@
       </div>
     </div>
 
-     <div ng-class="{ 'has-error': photo_url.$dirty && photo_url.$error.required }">
-      <div class="form-group">
-        <label class="sr-only" for="photo_url">Photo Url</label>
-        <input type="text" name="photo_url" class="form-control" placeholder="Photo Url" ng-model="photo_url" required />
-        <span ng-show="photo_url.$dirty && photo_url.$error.required" class="help-block">Photo is required.</span>
-      </div>
-    </div>
-
     <div ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
       <div class="form-group">
         <label class="sr-only" for="password">Password</label>
