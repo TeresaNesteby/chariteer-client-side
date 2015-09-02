@@ -1,17 +1,19 @@
-<h2>My Profile Page</h2>
+<h2>Volunteer Profile</h2>
 
 <div class="row debug">
   <div class="col span-3-d debug">
     <img src="{{vol_first.photo_url}}">
   </div>
   <div class="col span-9-d debug">
+        <p class="tx-al-l"><span class="vol-bio-header">Name: </span>{{vol_first.first_name}} {{vol_first.last_name}} </p>
 
-        <h3>Name: {{vol_first.first_name}} {{vol_first.last_name}}</h3>
-        <h4>Interest: {{vol_first.interest}}</h4>
-        <h4>Email: {{vol_first.email}}</h4>
+         <p class="tx-al-l"><span class="vol-bio-header">Interest: </span>{{vol_first.interest}}  </p>
+
+        <p class="tx-al-l"><span class="vol-bio-header">Email: </span>{{vol_first.email}}</p>
+
+        <h4 class="tx-al-l vol-bio-header">Email: {{vol_first.email}}</h4>
   </div>
 </div>
-
 
 <h3>Upcoming Events:</h2>
 <div class="row debug">
