@@ -3,53 +3,58 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Custom page header */
-/*.header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
-
-}*/
-/* Make the masthead heading the same height as the navigation */
-/*.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
-}*/
-
+/*NavBar*/
 .navbar {
    background: linear-gradient(#EC725A, #EE9C69, white);
-   height: 75px;
+   height: 80px;
+   border-bottom: none;
 }
 
-.nav li {
-  font-family: "Lato", sans-serif;
-  font-size: 18px;
-  padding-top: 8px;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-.nav li:hover {
-  background-color: #EE9C69;
-  opacity: 0.4;
+.nav-left li {
+  float: left;
+  padding-left: 55px;
+  padding-top: -30px;
 }
 
-.nav navbar-nav {
+.nav-right li {
+  float: right;
+  padding-top: 15px;
+}
+
+#logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 60px;
+  width: 300px;
+}
+
+a:link, a:visited {
+  display: block;
+  text-decoration: none;
   color: white;
+  width: 100px;
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
 }
 
-/* Custom page footer */
+a:hover, a:active {
+  color: white;
+  background-color: #EE9C69;
+  /*opacity: 0.4;*/
+  text-decoration: none;
+}
+/*End NavBar*/
+
+/* Footer */
 .footer {
   padding-top: 19px;
   height: 75px;
-  border-top: 1px solid #e5e5e5;
   background: linear-gradient(white, #EE9C69, #EC725A) !important;
 }
 
@@ -77,30 +82,10 @@ body {
     max-width: 730px;
   }
 }*/
- /*/* /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  /*.header {
-    margin-bottom: 30px;
-  }*/
-   /*Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+
 
 
 /*#####TRG###############################################################################################*/
-
-
-
-
-
-
 
 /*#######################################################
 
@@ -109,10 +94,6 @@ body {
     github: https://github.com/jkymarsh
     version: 1.0
 
-
-/*
-    http://www.paulirish.com/2012/box-sizing-border-box-ftw/
-*/
 .container,
 .row,
 .col {
@@ -125,10 +106,16 @@ body {
 .buttons {
   display: inline;
 }
+.buttons-container {
+ margin-top: 20px;
+ border: 4px solid #C4E237;
+ box-shadow: 6px 6px 2px 2px;
+ margin-bottom: 20px;
+}
 
 .cat-buttons {
-  display: inline;
   color: white;
+  font-size: 20px;
   height: 100px;
   width: 100px;
   margin: 30px;
@@ -145,11 +132,32 @@ body {
 /*ORG PROFILE CONTAINER ######################*/
 
 /*UPCOMING EVENTS: ################*/
+h4 {
+  font-family: 'Pacifico', cursive;
+  font-size: 26px;
+}
+
+.specific-event-box {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.upcoming {
+  border: 2px solid #cccccc;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #EE9C69;
+  /*opacity: 0.5;*/
+}
+
  .logo-container {
   width: 100px;
   height: 100px;
-  margin: 0 auto;
-  /*border: 2px solid black;*/
+
+  margin: 20px auto;
+  border: 2px solid black;
+
+
   background-image: url("images/placeholder.png");
  }
 
@@ -158,21 +166,20 @@ body {
   width: 50px;
   margin: 30px;
   border-radius: 5px;
-  box-shadow: 4px 4px 2px 2px #9BC12A;
+  box-shadow: 4px 4px 2px 2px green;
   background: #C4E237;
 }
 
 .im-in:hover {
-  box-shadow: 4px 4px 2px 2px green;
+  height: 60px;
+  width: 60px;
+ /* box-shadow: 4px 4px 2px 2px green;*/
 }
 
 .search {
-  width: 25%;
+  width: 30%;
   margin: auto;
 }
-
-
-
 
 
  /*ADD NEW EVENT ####################*/
@@ -194,16 +201,11 @@ body {
  }
 
 
-
-
-
-
-
 /*####################################################*/
 
-.debug {
+/*.debug {
   border: 1px solid red;
-}
+}*/
 
 html {
   -webkit-box-sizing: border-box;
