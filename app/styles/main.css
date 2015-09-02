@@ -58,23 +58,8 @@ a:hover, a:active {
   background: linear-gradient(white, #EE9C69, #EC725A) !important;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
-}
+
 
 /* Responsive: Portrait tablets and up */
 /*@media screen and (min-width: 768px) {
@@ -380,10 +365,10 @@ html {
 .control {
   margin-top: 4em;
 }
-img {
+/*img {
      max-width: 100%;
      max-height: auto;
-}
+}*/
 /*.cat-search {
   display: inline;
   float: left;
