@@ -30,30 +30,56 @@ angular.module('chariteerAngularApp')
 
 // removed the orgs.
   $scope.signUp = function() {
-    var dataFromForm = {
-      organization: {
+    // var dataFromForm = {
+    //   organization: {
+    //     name: $scope.name,
+    //     mission_statement: $scope.mission_statement,
+    //     phone_number: $scope.phone_number,
+    //     logo_image: $scope.logo_image,
+    //     website_url: $scope.website_url,
+    //     email: $scope.email,
+    //     non_profit: true,
+    //     password: $scope.password
+    //   }
+    // }
+    // console.log(dataFromForm)
+// removed the ; before .fail
+    // $http({
+    //   method: 'POST',
+    //   url: 'http://localhost:3000/api/organizations',
+    //   data: {organization: {
+    //     name: $scope.name,
+    //     mission_statement: $scope.mission_statement,
+    //     phone_number: $scope.phone_number,
+    //     logo_image: $scope.logo_image,
+    //     website_url: $scope.website_url,
+    //     email: $scope.email,
+    //     non_profit: true,
+    //     password: $scope.password
+    //   }},
+    //   dataType: 'jsonp'
+    // })
+    // .then(function(response) {
+    //   console.log("it worked! new org was created");
+    // }, function(response){
+    //   console.log('this did not work, here\'s why:', response)
+    // });
+    console.log($scope.name)
+    $http.post('http://localhost:3000/api/organizations', {
         name: $scope.name,
         mission_statement: $scope.mission_statement,
         phone_number: $scope.phone_number,
         logo_image: $scope.logo_image,
         website_url: $scope.website_url,
         email: $scope.email,
+        non_profit: true,
         password: $scope.password
-      }
-    }
-    console.log(dataFromForm)
-// removed the ; before .fail
-    $http({
-      method: 'POST',
-      url: 'http://localhost:3000/api/organizations',
-      data: dataFromForm,
-      dataType: 'jsonp'
-    })
+      })
     .then(function(response) {
-      console.log("it worked! new org was created");
-    }, function(error){
-      console.log('this did not work, here\'s why:', error)
-    });
+        console.log("it worked! new org was created" + $scope);
+      }, function(response){
+        console.log('this did not work, here\'s why:', response)
+      })
   }
 
 }]);
