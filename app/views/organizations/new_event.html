@@ -1,27 +1,27 @@
 <div>
   <h2>Add a new event below...</h2>
   <!-- <div ng-show="events.error">{{events.error}}</div> -->
-  <form name="form" ng-submit="events.createNewEvent">
+  <form name="form" ng-submit="addEvent()">
     <div ng-class="{ 'has-error': form.name.$dirty && form.name.$error.required }">
       <div class="form-group">
         <label for="name" class="sr-only">Event Name</label>
-        <input type="text" name="name" placeholder="Event Name" ng-model="events.name" class="form-control" required />
+        <input type="text" name="name" placeholder="Event Name" ng-model="name" class="form-control" required />
         <span ng-show="form.name.$dirty && form.name.$error.required" class="help-block">The event needs a name.</span>
       </div>
     </div>
 
-    <div ng-class="{ 'has-error': form.location.$dirty && form.location.$error.required }">
+    <div ng-class="{ 'has-error': form.place.$dirty && form.place.$error.required }">
       <div class="form-group">
-        <label for="location" class="sr-only">Location</label>
-        <input type="text" name="location" placeholder="Location" ng-model="events.location" class="form-control" required />
-        <span ng-show="form.location.$dirty && form.location.$error.required" class="help-block">where's this event happening?</span>
+        <label for="place" class="sr-only">Location</label>
+        <input type="text" name="place" placeholder="Location" ng-model="place" class="form-control" required />
+        <span ng-show="form.place.$dirty && form.place.$error.required" class="help-block">where's this event happening?</span>
       </div>
     </div>
 
     <div ng-class="{ 'has-error': form.org_name.$dirty && form.org_name.$error.required }">
       <div class="form-group">
         <label for="org_name" class="sr-only">Organization Name</label>
-        <input type="text" name="org_name" placeholder="Organization Name" ng-model="events.org_name" class="form-control" required />
+        <input type="text" name="org_name" placeholder="Organization Name" ng-model="org_name" class="form-control" required />
         <span ng-show="form.org_name.$dirty && form.org_name.$error.required" class="help-block">Enter your organization name.</span>
       </div>
     </div>
@@ -29,29 +29,29 @@
     <div ng-class="{ 'has-error': form.date.$dirty && form.date.$error.required }">
       <div class="form-group">
         <label class="sr-only" for="date">Date</label>
-        <input placeholder="Select Date" class="form-control" type="text" onfocus="(this.type='date')" ng-model="events.date" required />
+        <input placeholder="Select Date" class="form-control" type="text" onfocus="(this.type='date')" ng-model="date" required />
         <span ng-show="form.date.$dirty && form.date.$error.required" class="help-block">Date is required.</span>
       </div>
     </div>
 
-    <div ng-class="{ 'has-error': form.times.$dirty && form.times.$error.required }">
+    <div ng-class="{ 'has-error': form.time.$dirty && form.time.$error.required }">
       <div class="form-group">
-        <label for="times" class="sr-only">Time</label>
-        <input type="text" name="times" placeholder="Times (e.g. 10AM, 10PM, 5pm-7pm, etc)" ng-model="events.times" class="form-control" required />
-        <span ng-show="form.times.$dirty && form.times.$error.required" class="help-block">When's this event happening?</span>
+        <label for="time" class="sr-only">Time</label>
+        <input type="text" name="time" placeholder="Time (e.g. 10AM, 10PM, 5pm-7pm, etc)" ng-model="time" class="form-control" required />
+        <span ng-show="form.time.$dirty && form.time.$error.required" class="help-block">When's this event happening?</span>
       </div>
     </div>
 
     <div ng-class="{ 'has-error': form.num_of_volunteers_needed.$dirty && form.num_of_volunteers_needed.$error.required }">
       <div class="form-group">
         <label for="num_of_volunteers_needed" class="sr-only">Number of Volunteers Needed</label>
-        <input type="text" name="num_of_volunteers_needed" placeholder="Number of Volunteers Needed" ng-model="events.num_of_volunteers_needed" class="form-control" required />
+        <input type="text" name="num_of_volunteers_needed" placeholder="Number of Volunteers Needed" ng-model="num_of_volunteers_needed" class="form-control" required />
         <span ng-show="form.num_of_volunteers_needed.$dirty && form.num_of_volunteers_needed.$error.required" class="help-block">How many volunteers are needed for this event?</span>
       </div>
     </div>
 
     <div>
-      <button type="submit" class="btn btn-default">Add Event</button>
+      <button type="submit" ng-click="redirectToSearch()" class="btn btn-default">Add Event</button>
     </div>
 
   </form>

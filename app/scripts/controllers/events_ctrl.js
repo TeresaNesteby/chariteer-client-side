@@ -22,4 +22,21 @@ angular.module('chariteerAngularApp')
           $scope.organizations = data.organizations;
         });
 
-  })
+    $scope.addEvent = function() {
+      $http.post('http://localhost:3000/api/organizations/3/events',{
+          name: $scope.name,
+          org_name: $scope.org_name,
+          place: $scope.place,
+          date: $scope.date,
+          time: $scope.time,
+          num_of_volunteers_needed: $scope.num_of_volunteers_needed,
+          image: $scope.image
+      })
+        .then(function(response) {
+        // console.log("THE EVENT HAS BEEN CREATED!!", response.data.event);
+          $scope.redirectToSearch = function() {
+            window.location = "#/categories/events/search";
+          }
+      });
+    }
+  });
