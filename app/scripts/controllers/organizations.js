@@ -22,6 +22,8 @@ angular.module('chariteerAngularApp')
       $scope.first_org = controller.orgs_arr[0];
     });
 
+
+
   $scope.signUp = function() {
     $http.post('http://localhost:3000/api/organizations', {
         name: $scope.name,
