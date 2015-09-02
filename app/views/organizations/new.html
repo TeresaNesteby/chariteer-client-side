@@ -5,7 +5,7 @@
     <div ng-class="{ 'has-error': form.name.$dirty && form.name.$error.required }">
       <div class="form-group">
         <label for="name" class="sr-only">Name</label>
-        <input type="text" name="name" placeholder="Organization Name" ng-model="orgs.name" class="form-control" required />
+        <input type="text" name="name" placeholder="Organization Name" ng-model="name" class="form-control" required />
         <span ng-show="form.name.$dirty && form.name.$error.required" class="help-block"></span>
       </div>
     </div>

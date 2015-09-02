@@ -1,11 +1,11 @@
 <div>
   <h2>New Volunteer Sign Up</h2>
-  <!-- <div ng-show="vol.error">{{vol.error}}</div> -->
-  <form name="form" ng-submit="vol.signup">
+  <!-- <div ng-show="error">{{vol.error}}</div> -->
+  <form name="form" ng-submit="signUp()">
     <div ng-class="{ 'has-error': form.first_name.$dirty && form.first_name.$error.required }">
       <div class="form-group">
         <label class="sr-only" for="first_name">First Name</label>
-          <input type="text" name="first_name" class="form-control" placeholder="First Name" ng-model="vol.first_name" required />
+          <input type="text" name="first_name" class="form-control" placeholder="First Name" ng-model="first_name" required />
           <span ng-show="form.first_name.$dirty && form.first_name.$error.required" class="help-block">First name is required.</span>
       </div>
     </div>
@@ -13,7 +13,7 @@
     <div ng-class="{ 'has-error': form.last_name.$dirty && form.last_name.$error.required }">
       <div class="form-group">
           <label class="sr-only" for="last_name">Last Name</label>
-          <input type="text" name="last_name" class="form-control" placeholder="Last Name" ng-model="vol.last_name" required />
+          <input type="text" name="last_name" class="form-control" placeholder="Last Name" ng-model="last_name" required />
           <span ng-show="form.last_name.$dirty && form.last_name.$error.required" class="help-block">Last name is required.</span>
       </div>
     </div>
@@ -37,7 +37,7 @@
     <div ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
       <div class="form-group">
         <label class="sr-only" for="password">Password</label>
-        <input type="password" name="password" class="form-control" placeholder="Password" ng-model="vol.password" required />
+        <input type="password" name="password" class="form-control" placeholder="Password" ng-model="password" required />
         <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block"></span>
       </div>
     </div>
