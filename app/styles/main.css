@@ -22,15 +22,14 @@ body {
 /*NavBar*/
 .navbar {
    background: linear-gradient(#EC725A, #EE9C69, white);
-   height: 80px;
+   height: 100px;
    border-bottom: none;
 }
 
-ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
 .nav-left li {
@@ -47,22 +46,16 @@ ul {
 #logo {
   font-family: 'Pacifico', cursive;
   font-size: 60px;
+  color: white;
   width: 300px;
 }
 
-a:link, a:visited {
-  display: block;
-  text-decoration: none;
-  color: white;
+nav ul li a:link {
   width: 100px;
   font-family: "Lato", sans-serif;
   font-size: 22px;
-}
-
-a:hover, a:active {
-  color: white;
-  background-color: #EE9C69;
-  /*opacity: 0.4;*/
+  color: #CCCCCC;
+  display: block;
   text-decoration: none;
 }
 /*End NavBar*/
