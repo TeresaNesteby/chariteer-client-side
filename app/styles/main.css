@@ -41,7 +41,7 @@ body {
   opacity: 0.4;
 }
 
-.navbar-nav, .nav {
+.nav navbar-nav {
   color: white;
 }
 
