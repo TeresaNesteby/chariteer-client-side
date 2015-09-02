@@ -201,9 +201,9 @@ body {
 
 /*####################################################*/
 
-/*.debug {
+.debug {
   border: 1px solid red;
-}*/
+}
 
 html {
   -webkit-box-sizing: border-box;
@@ -371,9 +371,9 @@ html {
 }
 
 .form-control {
-  margin-bottom: 6em;
-  margin-top: 3em;
-  border-style: solid;
+/*  margin-bottom: 6em;
+  margin-top: 4em;
+  border-style: solid;*/
 }
 .control {
   margin-top: 4em;
@@ -381,5 +381,14 @@ html {
 img {
      max-width: 100%;
      max-height: auto;
+}
+/*.cat-search {
+  display: inline;
+  float: left;
+}*/
+
+.event-search{
+  margin-top: 3em;
+  margin-bottom: 5em;
 }
 
