@@ -19,6 +19,7 @@ angular.module('chariteerAngularApp')
     })
     .success(function(response) {
       controller.orgs_arr = response;
+      console.log(controller.orgs_arr)
       $scope.first_org = controller.orgs_arr[0];
     });
 
