@@ -153,8 +153,11 @@ h4 {
  .logo-container {
   width: 100px;
   height: 100px;
+
   margin: 20px auto;
   border: 2px solid black;
+
+
   background-image: url("images/placeholder.png");
  }
 
@@ -368,3 +371,26 @@ html {
   width: 35%;
   margin: .5em auto;
 }
+
+.form-control {
+/*  margin-bottom: 6em;
+  margin-top: 4em;
+  border-style: solid;*/
+}
+.control {
+  margin-top: 4em;
+}
+img {
+     max-width: 100%;
+     max-height: auto;
+}
+/*.cat-search {
+  display: inline;
+  float: left;
+}*/
+
+.event-search{
+  margin-top: 3em;
+  margin-bottom: 5em;
+}
+

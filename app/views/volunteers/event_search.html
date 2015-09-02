@@ -1,12 +1,23 @@
 <div class="row debug">
+  <h1>Search for upcoming volunteer opportunities!</h1>
+
 
   <h4>Search by Category: </h4>
+
+
+  <h4 class="control">Search by category</h4>
+
 
       <div class="buttons-container">
         <div class="buttons" ng-repeat='category in categories'>
           <button class="cat-buttons" ng-click='events.categoryId=category.id'>{{category.category_type}}</button>
         </div>
       </div>
+
+
+
+  <div class="col span-12-d debug event-search">
+      <h4>Search by event name</h4>
 
 
   <div class="col span-12-d debug">
@@ -20,8 +31,8 @@
   </div>
 
 
-        <!-- <p>{{ events.searchInput}}</p> -->
-    </div>
+
+  </div>
 <h3>Upcoming Events: </h3>
 
 <div class="row upcoming debug" ng-repeat="event in events | filter:events.searchInput | filter: {category_id: events.categoryId}" >
@@ -35,4 +46,32 @@
   <div class="col span-3-d debug">
     <button class="im-in">I'm in!</button>
   </div>
+
+<input type="text" class="form-control search" ng-model="events.searchInput" />
+
+</div>
+
+
+<h2><u> Upcoming Events: </u></h2>
+
+<div class="events-container">
+<table>
+  <div class="row debug" ng-repeat="event in events | filter:events.searchInput | filter: {category_id: events.categoryId}" >
+   <div class="col span-3-d debug">
+      <div class="logo-container">
+         <img src="{{event.logo_image}}">
+      </div>
+    </div>
+   <div class="col span-6-d debug">
+
+    <h5>{{event.name}}</h5>
+    <p>{{event.location}}</p>
+    <p>{{event.org_name}}</p>
+    <p>{{event.date}}</p>
+    <p>{{event.time}}</p>
+    <p>{{event.num_of_volunteers_needed}}</p>
+
+   </div>
+  <div class="col span-3-d debug"><button class="im-in">I'm in!</button</div>
+</table>
 </div>
