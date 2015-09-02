@@ -1,7 +1,7 @@
 <div>
   <h2>Welcome Back! Login</h2>
   <!-- <div ng-show="main.error">{{main.error}}</div> -->
-  <form name="form" ng-submit="main.login">
+  <form name="form" ng-submit="logIn()">
     <div ng-class="{ 'has-error': form.email.$dirty && form.email.$error.required }">
       <div class="form-group">
         <label class="sr-only" for="email">Email</label>
