@@ -9,16 +9,19 @@
  */
 angular.module('chariteerAngularApp')
   .controller('EventsCtrl', function ($scope, $http, $log) {
-    
-    $scope.events = {};
+
+    var controller = this;
       $http({
           method: 'GET',
           url: 'http://localhost:3000/api/organizations/3/events',
           dataType: 'jsonp'
         })
         .success(function(data) {
+          controller.listOfEvents = data;
           $scope.categories = data.categories;
           $scope.events = data.events;
+          $scope.first_event = listOfEvents[0];
+          $scope.second_event = listOfEvents[1];
           $scope.organizations = data.organizations;
         });
 
