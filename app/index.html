@@ -29,18 +29,18 @@
           <li><a id="logo" ng-href="#/">Chariteer</a></li>
         </ul>
         <ul class="nav-right">
-          <li><a ng-if="ifLoginIn" ng-href="#/sessions/logout">Logout</a></li>
-              <li><a ng-href="#/categories/events/search">Search</a></li>
-              <li><a ng-if="ifLoginIn" ng-href="#/volunteers/profile">Profile</a></li>
-            </ul>
+          <li class="nav-right-a"><a ng-if="ifLoginIn" ng-href="#/sessions/logout">Logout</a></li>
+          <li class="nav-right-a"><a ng-href="#/categories/events/search">Search</a></li>
+          <li class="nav-right-a"><a ng-if="ifLoginIn" ng-href="#/volunteers/profile">Profile</a></li>
+        </ul>
       </nav>
 
-  <div class="wrapper">
-    <div class="container debug">
-      <div ng-view=""></div>
-    </div>
-    <div class="push"></div>
-  </div>
+      <div class="wrapper">
+        <div class="container debug">
+          <div ng-view=""></div>
+        </div>
+        <div class="push"></div>
+      </div>
 
 <!-- FOOTER: -->
     <div class="footer debug">
