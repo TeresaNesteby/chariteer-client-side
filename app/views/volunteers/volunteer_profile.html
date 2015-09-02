@@ -5,30 +5,34 @@
     <img src="{{vol_first.photo_url}}">
   </div>
   <div class="col span-9-d debug">
-        <p class="tx-al-l"><span class="vol-bio-header">Name: </span>{{vol_first.first_name}} {{vol_first.last_name}} </p>
+        <p class="tx-al-l"><span class="vol-bio-header">Name:  </span>{{vol_first.first_name}} {{vol_first.last_name}} </p>
 
-         <p class="tx-al-l"><span class="vol-bio-header">Interest:</span>{{vol_first.interest}} </p>
+         <p class="tx-al-l"><span class="vol-bio-header">Interest:  </span>{{vol_first.interest}} </p>
 
-        <p class="tx-al-l"><span class="vol-bio-header">Email:</span>{{vol_first.email}}</p>
+        <p class="tx-al-l"><span class="vol-bio-header">Email:  </span>{{vol_first.email}}</p>
 
-        <h4 class="tx-al-l"><span class=
-        "vol-bio-header">Email:</span>{{vol_first.email}}</h4>
+  </div>
+</div>
+<h3>Upcoming Events That You have Registered For:</h2>
+  <div ng-controller="events" ng-model="">
+ <div class="col span-3-d debug">
+    <div class="logo-container">
+      <img src="https://pbs.twimg.com/profile_images/3343036919/d8ba4f06f2a81fd1e9df377889855fe1_400x400.jpeg">
+    </div>
+</div>
+<div class="col span-6-d debug">
+    <h3>Coastal Cleanup Day Beach Cleanup</h3>
+    <p>Organization: Aquarium of the Bay <!-- {{first_event.org_name}} --></p>
+    <p>Date: Saturday, September 19, 2015<!-- {{first_event.date}} --></p>
+    <p>Time: 9:00 AM-12:00 AM<!-- {{first_event.time}} --></p>
+    <p>Location: San Francisco Bay <!-- {{first_event.place}} --></p>
   </div>
 </div>
 
-<h3>Upcoming Events:</h2>
-<div class="row debug">
-  <ng-repeat="event in events | filter: {volunteer_id: 1}" >
 
-  <div class="col span-4-d debug">
-    <img src="{{event.image}}">
-    <h3>{{event.name}}</h3>
-    <p>{{event.org_name}}</p>
-    <p>Date: {{event.date}}</p>
-    <p>Time: {{event.time}}</p>
-    <p>Location: {{event.location}}</p>
 
-  </div>
+
+
   <div class="col span-4-d debug">
     Event 2
   </div>
@@ -36,28 +40,5 @@
     Event 3
   </div>
 </div>
-
-<div class="row upcoming debug" ng-repeat="event in events | filter: {volunteer_id: events.volunteerId}" >
-  <div class="col span-3-d debug">
-    <div class="logo-container">
-
-        <img src="{{event.image}}">
-    </div>
-  </div>
-  <div class="col span-6-d debug">
-
-    <h3>{{event.name}}</h3>
-    <p>{{event.org_name}}</p>
-    <p>Date: {{event.date}}</p>
-    <p>Time: {{event.time}}</p>
-    <p>Location: {{event.location}}</p>
-  </div>
-  <div class="col span-3-d debug">
-
-
-
-
-
-
 
 
