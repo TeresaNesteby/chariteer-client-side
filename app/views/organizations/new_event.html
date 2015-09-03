@@ -1,5 +1,5 @@
 <div>
-  <h2>Add a new event below...</h2>
+  <h2 class="neworg-signup">Add a new event below...</h2>
   <!-- <div ng-show="events.error">{{events.error}}</div> -->
   <form name="form" ng-submit="addEvent()">
     <div ng-class="{ 'has-error': form.name.$dirty && form.name.$error.required }">
@@ -50,7 +50,7 @@
       </div>
     </div>
 
-    <div>
+    <div class="login-button">
       <button type="submit" ng-click="redirectToSearch()" class="btn btn-default">Add Event</button>
     </div>
 
