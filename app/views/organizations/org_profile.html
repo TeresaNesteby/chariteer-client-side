@@ -7,29 +7,36 @@
 
     <div class="col span-9-d debug profile-txt">
       <p class="tx-al-l"><span class="org-bio-header nameeeee">{{ first_org.name }}</span> </p>
-      <p class="tx-al-l"><span class="org-bio-header">{{ first_org.mission_statement }}</span></p>
-      <p class="tx-al-l"><a class="a-tag" ng-href="{{first_org.website.url}}"> <span class="org-bio-header">{{ first_org.website_url }}</span></a> </p>
-      <p class="tx-al-l"><span class="org-bio-header">{{ first_org.phone_number }}</span> </p>
-      <p class="tx-al-l"><span class="org-bio-header">{{ first_org.email }}</span>  </p>
+      <p class="tx-al-l"><span class="org-bio-header profile-txt">{{ first_org.mission_statement }}</span></p>
+      <p class="tx-al-l"><a class="a-tag" ng-href="{{first_org.website.url}}"> <span class="org-bio-header profile-txt">{{ first_org.website_url }}</span></a> </p>
+      <p class="tx-al-l"><span class="org-bio-header profile-txt">{{ first_org.phone_number }}</span> </p>
+      <p class="tx-al-l"><span class="org-bio-header profile-txt">{{ first_org.email }}</span>  </p>
     </div>
   </div>
 
-  <div class="container">
-    <h2>Get Involved</h2>
+
+      <h2 class="get-inv">Get Involved</h2>
       <div class="row events-containerrrr debug">
         <div class="col span-4-d debug">
           <div class="event-container new-event-box">
             <p class="new-eventtt">new event</p>
-            <a ng-href="#/orgs/event/new"><button class="plus-format glyphicon glyphicon-plus"></button></a>
+            <a ng-href="#/orgs/event/new"><button class="plus-format glyphicon-plus"></button></a>
           </div>
         </div>
 
         <div class="col span-4-d debug"  ng-repeat="event in eventsForOrg">
           <div class="event-container">
-            <img ng-src="{{event.image}}">
+            <div class="event-titleeeeee">{{ event.name }}</div>
+            <img class="event-imgs" ng-src="{{event.image}}">
           </div>
-          <button ng-click="updateEvent"><span class="event-update-button">Update</button></span>
-          <button ng-click="deleteEvent"><span class="event-update-button">Delete</button></span>
+
+          <div class="event-txtttt top">{{ event.date }}</div>
+          <div class="event-txtttt">{{ event.place }}</div>
+
+
+          <div class="button-container">
+            <button class="button-event" ng-click="updateEvent">Update</button>
+            <button class="button-event" ng-click="deleteEvent">Delete</button>
+          </div>
         </div>
       </div>
-    </div>

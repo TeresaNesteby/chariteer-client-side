@@ -3,12 +3,19 @@
   margin-left: 20px;
 }
 
+.get-inv {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  text-align: center;
+}
+
 .org-bio-header {
   margin-left: 5px;
 }
 
 .nameeeee {
-  font-size: 28px;
+  font-size: 48px;
+  margin-bottom: 10px;
 }
 
 .org-container {
@@ -21,12 +28,13 @@
 
 .profile-txt {
   margin-top: 55px;
-  font-size: 18px;
+  font-size: 25px;
+  margin-bottom: 5px;
 }
 
 .org-img {
-  max-width: 75%;
-  max-height: 75%;
+  max-width: 65%;
+  max-height: 70%;
   margin-top: 25px;
   margin-bottom: 25px;
   margin-left: 50px;
@@ -47,25 +55,39 @@
 
 .events-containerrrr {
   border: 1px solid #bdc3c7;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.event-imgs {
+  height: 90%;
 }
 
  /*ADD NEW EVENT ####################*/
  .event-container {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 310px;
   margin: 0 auto;
- }
-
- .new-event-box {
-  background-color: #EC725A;
-  box-shadow: 5px 5px #bdc3c7;
+  opacity: .8;
+  margin-bottom: 10px;
   border-style: none;
  }
 
+ .new-event-box {
+  background-color: #bdc3c7;
+  box-shadow: 5px 5px #EC725A;
+  border-style: none;
+  margin-top: 50px;
+  margin-bottom: 30px;
+ }
+
  .new-eventtt {
-  font-size: 18px;
+  font-size: 22px;
   color: white;
-  background-color:  #EE9C69;
+  background-color:  #EC725A;
+  opacity: .9;
+  border-radius: 2%;
   text-align: center;
   width: 60%;
   border-radius: 3%;
@@ -74,26 +96,58 @@
 
  .plus-format {
   border-style: none;
-  font-size: 20px;
-  background-color: #EC725A;
+  height: 180px;
+  width: 180px;
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 150px;
+  line-height: 5px;
+  background-color: #bdc3c7;
   color: white;
  }
 
  .plus-format:hover {
-  font-size: 40px;
+  font-size: 190px;
  }
 
  .event-update-button {
   font-size: 14px;
+  width: 90%;
  }
 
- /*dfzsdfszfsafds*/
-/*.buttons {
-  display: inline;
-  margin-right: 10px;
+ .button-container {
+  margin: 5px 10px;
+  padding-bottom: 1em;
+  text-align: center;
+ }
+
+ .button-event {
+  border: 1px solid #EC725A;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 4%;
+  background-color: white;
+  color: #EC725A;
+  height: 40px;
+  width: 120px;
+ }
+
+.event-titleeeeee {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 5px;
+  width: 90%;
+  text-align: center;
 }
-.buttons-container {
- margin-top: 20px;
- margin-bottom: 20px;
-}*/
+
+.top {
+  margin-top: 60px;
+}
+
+.event-txtttt {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
 
