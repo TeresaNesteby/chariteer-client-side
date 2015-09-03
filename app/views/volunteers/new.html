@@ -1,5 +1,5 @@
 <div>
-  <h2>New Volunteer Sign Up</h2>
+  <h2 class="volsignup">Sign Up to be a Volunteer</h2>
   <!-- <div ng-show="error">{{vol.error}}</div> -->
   <form name="form" ng-submit="signUp()">
     <div ng-class="{ 'has-error': form.first_name.$dirty && form.first_name.$error.required }">
@@ -14,7 +14,7 @@
       <div class="form-group">
           <label class="sr-only" for="last_name">Last Name</label>
           <input type="text" name="last_name" class="form-control" placeholder="Last Name" ng-model="last_name" required />
-          <ng-show="form.last_name.$dirty && form.last_name.$error.required" class="help-block">Last name is required.</span>
+          <ng-show="form.last_name.$dirty && form.last_name.$error.required" class="help-block"></span>
       </div>
     </div>
 
@@ -43,7 +43,7 @@
     </div>
 
 
-    <div>
+    <div class="volsingupbutton" >
       <button type="submit" class="btn btn-default">Sign Up</button>
       <p><a href="#/main/new" id="linkssss">Already a member? Sign in</a></p>
     </div>

@@ -1,5 +1,5 @@
 <div>
-  <h2>Welcome Back!</h2>
+  <h2 class="loginheader">Welcome Back!</h2>
   <!-- <div ng-show="main.error">{{main.error}}</div> -->
   <form name="form" ng-submit="logIn()">
     <div ng-class="{ 'has-error': form.email.$dirty && form.email.$error.required }">
@@ -18,8 +18,8 @@
       </div>
     </div>
 
-    <div>
-      <button type="submit" ng-click="redirect()" class="btn btn-default">Login</button>
+    <div class="login-button">
+      <button type="submit" ng-click="redirect()" class="btn btn-default ">Login</button>
     </div>
 
   </form>
