@@ -11,16 +11,17 @@ angular.module('chariteerAngularApp')
   .controller('OrganizationsCtrl', ['$scope', '$http', function ($scope, $http) {
     $scope.banana="organization 1";
 
-    var controller = this;
+    // var controller = this;
     $http({
       method: 'GET',
       url: 'http://localhost:3000/api/organizations',
       dataType: 'jsonp'
     })
     .success(function(response) {
-      controller.orgs_arr = response;
-      // console.log(controller.orgs_arr)
-      $scope.first_org = controller.orgs_arr[0];
+      $scope.orgs_arr = response.organizations;
+      $scope.first_org = $scope.orgs_arr[0];
+      $scope.events = response.events;
+      $scope.eventsForOrg = $scope.getEventsByOrg($scope.events, 1);
     });
 
   $scope.signUp = function() {
@@ -40,4 +41,18 @@ angular.module('chariteerAngularApp')
         console.log('this did not work, here\'s why:', response)
       })
   }
+
+  $scope.getEventsByOrg = function(events, org_id) {
+    var events_arr = [];
+
+    for (var i = 0; i < events.length; i++) {
+      if (events[i].organization_id === org_id) {
+        events_arr.push(events[i]);
+      }
+    }
+
+    return events_arr;
+  };
+
+  
 }]);
