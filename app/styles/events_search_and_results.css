@@ -29,7 +29,8 @@
 }
 
 .cat-buttons:hover {
-  color: #C4E237;
+  color: white;
+  font-size: 16px;
   font-weight: bolder;
 }
 
@@ -60,8 +61,19 @@
   margin-top: 1em;
 }
 
-#event-name {
-  color: #c0392b;
+.event-info-h {
+  font-weight: bold;
+  text-align: left;
+  font-size: 18px;
+}
+
+.text-l {
+  text-align: left;
+  margin-left: 70px;
+}
+
+.event-font {
+  font-family: 'Raleway Dots', cursive;
 }
 
 .upcoming {

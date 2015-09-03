@@ -10,6 +10,11 @@
 angular.module('chariteerAngularApp')
   .controller('EventsCtrl', function ($scope, $http, $log) {
 
+    $scope.getVolunteers = function(){
+      return Math.floor((Math.random()*8)+1);
+    }
+
+
     var controller = this;
       $http({
           method: 'GET',
