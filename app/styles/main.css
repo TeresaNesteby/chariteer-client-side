@@ -22,7 +22,7 @@ body {
 /*NavBar*/
 .navbar {
    background: linear-gradient(#EC725A, #EE9C69, white);
-   height: 100px;
+   height: 150px;
    border-bottom: none;
 }
 
@@ -46,7 +46,7 @@ nav ul {
 
 #logo {
   font-family: 'Pacifico', cursive;
-  font-size: 60px;
+  font-size: 70px;
   color: white;
   width: 300px;
   text-decoration: none;
