@@ -7,10 +7,10 @@
 
     <div class="col span-9-d debug profile-txt">
       <p class="tx-al-l"><span class="org-bio-header nameeeee">{{ first_org.name }}</span> </p>
-      <p class="tx-al-l"><span class="org-bio-header">{{ first_org.mission_statement }}</span></p>
-      <p class="tx-al-l"><a class="a-tag" ng-href="{{first_org.website.url}}"> <span class="org-bio-header">{{ first_org.website_url }}</span></a> </p>
-      <p class="tx-al-l"><span class="org-bio-header">{{ first_org.phone_number }}</span> </p>
-      <p class="tx-al-l"><span class="org-bio-header">{{ first_org.email }}</span>  </p>
+      <p class="tx-al-l"><span class="org-bio-header profile-txt">{{ first_org.mission_statement }}</span></p>
+      <p class="tx-al-l"><a class="a-tag" ng-href="{{first_org.website.url}}"> <span class="org-bio-header profile-txt">{{ first_org.website_url }}</span></a> </p>
+      <p class="tx-al-l"><span class="org-bio-header profile-txt">{{ first_org.phone_number }}</span> </p>
+      <p class="tx-al-l"><span class="org-bio-header profile-txt">{{ first_org.email }}</span>  </p>
     </div>
   </div>
 
@@ -30,8 +30,8 @@
           </div>
 
           <div class="event-titleeeeee">{{ event.name }}</div>
-          <div class="event-titleeeeee">{{ event.date }}</div>
-          <div class="event-titleeeeee">{{ event.place }}</div>
+          <div class="event-txtttt">{{ event.date }}</div>
+          <div class="event-txtttt">{{ event.place }}</div>
 
 
           <div class="button-container">

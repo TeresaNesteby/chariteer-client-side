@@ -14,7 +14,8 @@
 }
 
 .nameeeee {
-  font-size: 28px;
+  font-size: 48px;
+  margin-bottom: 10px;
 }
 
 .org-container {
@@ -27,7 +28,8 @@
 
 .profile-txt {
   margin-top: 55px;
-  font-size: 18px;
+  font-size: 25px;
+  margin-bottom: 5px;
 }
 
 .org-img {
@@ -63,8 +65,8 @@
 
  /*ADD NEW EVENT ####################*/
  .event-container {
-  width: 250px;
-  height: 280px;
+  width: 300px;
+  height: 310px;
   margin: 0 auto;
   opacity: .8
  }
@@ -79,6 +81,8 @@
   font-size: 22px;
   color: white;
   background-color:  #EC725A;
+  opacity: .9;
+  border-radius: 2%;
   text-align: center;
   width: 60%;
   border-radius: 3%;
@@ -89,8 +93,8 @@
   border-style: none;
   height: 180px;
   width: 180px;
-  margin: 10px 35px;
-  font-size: 100px;
+  margin: 5px 60px;
+  font-size: 150px;
   background-color: #bdc3c7;
   color: white;
  }
@@ -113,8 +117,9 @@
 
  .button-event {
   border: 1px solid #EC725A;
-  font-size: 20px;
+  font-size: 22px;
   text-transform: uppercase;
+  font-weight: bold;
   border-radius: 4%;
   background-color: white;
   color: #EC725A;
@@ -123,9 +128,16 @@
  }
 
 .event-titleeeeee {
-  font-size: 16px;
-  padding: 1em;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 5px;
   border: 1px solid blue;
   text-align: center;
+}
+
+.event-txtttt {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 10px;
 }
 
