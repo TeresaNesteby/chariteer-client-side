@@ -3,10 +3,29 @@
 
 
 /*category buttons*/
+.buttons {
+  display: inline;
+  margin-right: 10px;
+}
+.buttons-container {
+ margin-top: 20px;
+ margin-bottom: 20px;
+ border: 4px solid #C4E237;
+ box-shadow: 6px 6px 2px 2px;
+}
 
-
-
-
+.cat-buttons {
+  width: 100px;
+  height: 100px;
+  line-height: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 10px;
+  vertical-align: middle;
+}
 
 /*event search bar*/
 .event-search{
@@ -28,6 +47,7 @@
 /*is there anywhere besides search page?*/
 .control {
   margin-top: 1em;
+  border: 1px solid blue;
 }
 
 /*results*/
