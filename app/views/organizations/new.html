@@ -1,5 +1,5 @@
 <div>
-  <h2>New Organization Sign Up</h2>
+  <h2 class="neworg-signup">New Organization Sign Up</h2>
   <!-- <div ng-show="error">{{orgs.error}}</div> -->
   <form name="form" ng-submit="signUp()">
     <div ng-class="{ 'has-error': form.name.$dirty && form.name.$error.required }">
@@ -62,7 +62,7 @@
     </div>
 
 
-    <div>
+    <div class="volsingupbutton">
       <button type="submit" class="btn btn-default">Sign Up</button>
       <p><a href="#/main/new">Already a member? Sign in</a><p>
     </div>
