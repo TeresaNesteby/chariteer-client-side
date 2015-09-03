@@ -14,7 +14,6 @@ angular.module('chariteerAngularApp')
       return Math.floor((Math.random()*8)+1);
     }
 
-
     var controller = this;
       $http({
           method: 'GET',
