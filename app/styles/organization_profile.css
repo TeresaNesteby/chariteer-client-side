@@ -3,6 +3,12 @@
   margin-left: 20px;
 }
 
+.get-inv {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  text-align: center;
+}
+
 .org-bio-header {
   margin-left: 5px;
 }
@@ -25,8 +31,8 @@
 }
 
 .org-img {
-  max-width: 75%;
-  max-height: 75%;
+  max-width: 65%;
+  max-height: 70%;
   margin-top: 25px;
   margin-bottom: 25px;
   margin-left: 50px;
@@ -52,7 +58,7 @@
 }
 
 .event-imgs {
-  height: 100%;
+  height: 90%;
 }
 
  /*ADD NEW EVENT ####################*/
@@ -81,6 +87,9 @@
 
  .plus-format {
   border-style: none;
+  height: 180px;
+  width: 180px;
+  margin: 10px 35px;
   font-size: 100px;
   background-color: #bdc3c7;
   color: white;
