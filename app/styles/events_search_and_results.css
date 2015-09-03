@@ -10,21 +10,22 @@
 .buttons-container {
  margin-top: 20px;
  margin-bottom: 20px;
- border: 4px solid #C4E237;
- box-shadow: 6px 6px 2px 2px;
 }
 
 .cat-buttons {
-  width: 100px;
-  height: 100px;
-  line-height: 10px;
+  width: 150px;
+  height: 150px;
+  line-height: 13px;
   border-radius: 50%;
   text-decoration: none;
   overflow: hidden;
   text-align: center;
   margin: 0 auto;
-  font-size: 10px;
+  font-size: 14px;
   vertical-align: middle;
+  background-color: #bdc3c7;
+  color: black;
+  border-style: none;
 }
 
 /*event search bar*/
@@ -51,6 +52,10 @@
 }
 
 /*results*/
+.events-results {
+  margin-top: 1em;
+}
+
 .upcoming {
   border: 2px solid #cccccc;
   margin-top: 20px;

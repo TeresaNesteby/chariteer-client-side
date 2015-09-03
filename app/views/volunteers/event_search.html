@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="col span-12-d debug">
-      <h3 class="control">what's your volunteering spirit calling out? </h3>
+      <h3 class="control">how would you like to contribute?</h3>
 
       <div class="buttons-container">
         <div class="buttons" ng-repeat='category in categories'>
@@ -18,25 +18,27 @@
       </div>
     </div>
 
-    <div class="col span-12-d debug">
+    <div class="col span-12-d debug events-results">
       <h3>Upcoming Events: </h3>
+      <h5>find your next opportunity to build up the community</h5>
     </div>
 
+    <div class="row upcoming debug" ng-repeat="event in events | filter:events.searchInput | filter: {category_id: events.categoryId}" >
+      <div class="col span-3-d debug">
+        <div class="logo-container">
+          <img src="{{event.image}}">
+        </div>
+      </div>
 
-<div class="row upcoming debug" ng-repeat="event in events | filter:events.searchInput | filter: {category_id: events.categoryId}" >
-  <div class="col span-3-d debug">
-    <div class="logo-container">
+      <div class="col span-6-d debug">
+        <h3>{{event.name}}</h3>
+        <p>{{event.org_name}}</p>
+        <p>Date: {{event.date}}</p>
+        <p>Time: {{event.time}}</p>
+        <p>Location: {{event.place}}</p>
+      </div>
 
-        <img src="{{event.image}}">
+      <div class="col span-3-d debug">
+        <button class="im-in">I'm in!</button>
+      </div>
     </div>
-  </div>
-  <div class="col span-6-d debug">
-
-    <h3>{{event.name}}</h3>
-    <p>{{event.org_name}}</p>
-    <p>Date: {{event.date}}</p>
-    <p>Time: {{event.time}}</p>
-    <p>Location: {{event.location}}</p>
-  </div>
-  <div class="col span-3-d debug">
-    <button class="im-in">I'm in!</button>
