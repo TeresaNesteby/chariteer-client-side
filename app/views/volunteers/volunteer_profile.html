@@ -13,32 +13,20 @@
 
   </div>
 </div>
-<h3>Upcoming Events That You have Registered For:</h2>
-  <div ng-controller="events" ng-model="">
- <div class="col span-3-d debug">
+<h3>Upcoming Events That You have Registered For:</h3>
+  <div ng-controller="EventsCtrl">
+ <div class="col span-6-d debug" ng-repeat="event in events">
+ <div style="color: blue">
     <div class="logo-container">
-      <img src="https://pbs.twimg.com/profile_images/3343036919/d8ba4f06f2a81fd1e9df377889855fe1_400x400.jpeg">
+      <img src="{{event.image}}">
     </div>
+    <h5>{{event.name}}</h5>
+    <p>Organization:{{event.org_name}}</p>
+    <p>Date: event.date</p>
+    <p>Time: {{event.time}}</p>
+    <p>Location: {{event.place}}</p>
 </div>
-<div class="col span-6-d debug">
-    <h3>Coastal Cleanup Day Beach Cleanup</h3>
-    <p>Organization: Aquarium of the Bay <!-- {{first_event.org_name}} --></p>
-    <p>Date: Saturday, September 19, 2015<!-- {{first_event.date}} --></p>
-    <p>Time: 9:00 AM-12:00 AM<!-- {{first_event.time}} --></p>
-    <p>Location: San Francisco Bay <!-- {{first_event.place}} --></p>
-  </div>
 </div>
-
-
-
-
-
-  <div class="col span-4-d debug">
-    Event 2
-  </div>
-   <div class="col span-4-d debug">
-    Event 3
-  </div>
 </div>
 
 
