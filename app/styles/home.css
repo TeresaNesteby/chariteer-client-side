@@ -5,25 +5,19 @@
   text-align: center;
   border-radius: 15px;
   margin: 40px auto;
-  border: 8px solid #9BC12A;
+  border: 8px solid #EE9C69;
   height: 350px;
-  width: 350px;
+  width: 80%;
 }
 
 .words {
   padding-top: 30px;
+  font-size: 45px;
 }
 
 .btn {
   font-size: 21px;
   margin: 20px auto 20px auto;
-  background-color: #C4E237;
+  background-color: #EE9C69;
   border-style: none;
-}
-
-.org {
-  height: 100px;
-  width: 150px;
-  margin-left: 120px;
-  margin-bottom: 50px;
 }
