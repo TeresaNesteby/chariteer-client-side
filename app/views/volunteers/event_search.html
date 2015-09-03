@@ -8,6 +8,8 @@
         <input type="text" class="form-control search" placeholder="what event are you looking for?" ng-model="events.searchInput" />
       </div>
     </div>
+
+
     <div class="col span-12-d debug">
       <h3 class="control">how would you like to contribute?</h3>
 
@@ -22,6 +24,7 @@
       <h3>Upcoming Events: </h3>
       <h5>find your next opportunity to build up the community</h5>
     </div>
+  </div>
 
     <div class="row upcoming debug" ng-repeat="event in events | filter:events.searchInput | filter: {category_id: events.categoryId}" >
       <div class="col span-3-d debug">

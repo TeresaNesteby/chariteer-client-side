@@ -63,7 +63,8 @@ nav ul {
 
 .nav-right-a a:hover, a:active {
   font-weight: bold;
-  color: #C4E237;
+  font-size: 25px;
+  color: white;
 }
 
 /*End NavBar*/
@@ -137,9 +138,9 @@ nav ul {
 
 /*####################################################*/
 
-.debug {
+/*.debug {
   border: 1px solid red;
-}
+}*/
 
 html {
   -webkit-box-sizing: border-box;
