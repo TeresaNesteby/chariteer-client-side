@@ -8,6 +8,8 @@
   top: 200px;
   margin: 80px auto;
   border: 10px outset #EC725A;
+  margin: 80px auto;
+  border: 10px outset #9BC12A;
   height: 350px;
   width: 350px;
   z-index: 10;
@@ -27,7 +29,6 @@
   z-index: 10;
   }
 
-/*buttons*/
 .btn {
   font-size: 21px;
   margin: 20px;
@@ -39,10 +40,4 @@
   background-color: #EC725A;
 }
 
-/*Clip art*/
-.org-image {
-  height: 100px;
-  width: 150px;
-  margin-left: 120px;
-  padding-bottom: 8px;
-}
+
