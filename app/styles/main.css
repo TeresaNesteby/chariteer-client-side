@@ -41,6 +41,7 @@ nav ul {
 .nav-right li {
   float: right;
   padding-top: 15px;
+
 }
 
 #logo {
@@ -51,10 +52,15 @@ nav ul {
   text-decoration: none;
 }
 
+.nav-right-spacing {
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
 .nav-right-a a:link, a:visited {
   width: 100px;
   font-family: "Lato", sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   color: white;
   display: block;
   text-decoration: none;
@@ -63,7 +69,7 @@ nav ul {
 
 .nav-right-a a:hover, a:active {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 40px;
   color: white;
 }
 
