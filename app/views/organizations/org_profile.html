@@ -20,7 +20,7 @@
         <div class="col span-4-d debug">
           <div class="event-container new-event-box">
             <p class="new-eventtt">new event</p>
-            <a ng-href="#/orgs/event/new"><button class="plus-format glyphicon glyphicon-plus"></button></a>
+            <a ng-href="#/orgs/event/new"><button class="plus-format glyphicon-plus"></button></a>
           </div>
         </div>
 
@@ -28,8 +28,13 @@
           <div class="event-container">
             <img ng-src="{{event.image}}">
           </div>
-          <button ng-click="updateEvent"><span class="event-update-button">Update</button></span>
-          <button ng-click="deleteEvent"><span class="event-update-button">Delete</button></span>
+
+          <div><p>{{ event.name }}</p></div>
+
+          <div class="button-container">
+            <button class="button-event" ng-click="updateEvent">Update</button>
+            <button class="button-event" ng-click="deleteEvent">Delete</button>
+          </div>
         </div>
       </div>
     </div>

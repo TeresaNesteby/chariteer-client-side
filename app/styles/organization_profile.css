@@ -51,21 +51,22 @@
 
  /*ADD NEW EVENT ####################*/
  .event-container {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 280px;
   margin: 0 auto;
+  opacity: .8
  }
 
  .new-event-box {
-  background-color: #EC725A;
-  box-shadow: 5px 5px #bdc3c7;
+  background-color: #bdc3c7;
+  box-shadow: 5px 5px #EC725A;
   border-style: none;
  }
 
  .new-eventtt {
-  font-size: 18px;
+  font-size: 22px;
   color: white;
-  background-color:  #EE9C69;
+  background-color:  #EC725A;
   text-align: center;
   width: 60%;
   border-radius: 3%;
@@ -74,17 +75,36 @@
 
  .plus-format {
   border-style: none;
-  font-size: 20px;
-  background-color: #EC725A;
+  font-size: 100px;
+  background-color: #bdc3c7;
   color: white;
  }
 
  .plus-format:hover {
-  font-size: 40px;
+  font-size: 120px;
+  text-align: center;
  }
 
  .event-update-button {
   font-size: 14px;
+  width: 90%;
+ }
+
+ .button-container {
+  margin: 5px 10px;
+  padding-bottom: 1em;
+  text-align: center;
+ }
+
+ .button-event {
+  border: 1px solid #EC725A;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 4%;
+  background-color: white;
+  color: #EC725A;
+  height: 40px;
+  width: 120px;
  }
 
  /*dfzsdfszfsafds*/
