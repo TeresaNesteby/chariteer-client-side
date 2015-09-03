@@ -3,19 +3,41 @@
 
 
 /*category buttons*/
+.buttons {
+  display: inline;
+  margin-right: 10px;
+}
+.buttons-container {
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
 
-
-
-
+.cat-buttons {
+  width: 150px;
+  height: 150px;
+  line-height: 13px;
+  border-radius: 50%;
+  text-decoration: none;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 14px;
+  vertical-align: middle;
+  background-color: #bdc3c7;
+  color: black;
+  border-style: none;
+}
 
 /*event search bar*/
 .event-search{
   margin-top: 1em;
+  background-color: #EC725A;
 }
 
 .search {
-  width: 30%;
+  width: 70%;
   margin: auto;
+  text-align: center;
 }
 
 .specific-event-box {
@@ -26,10 +48,14 @@
 /*is there anywhere besides search page?*/
 .control {
   margin-top: 1em;
+  border: 1px solid blue;
 }
 
-
 /*results*/
+.events-results {
+  margin-top: 1em;
+}
+
 .upcoming {
   border: 2px solid #cccccc;
   margin-top: 20px;

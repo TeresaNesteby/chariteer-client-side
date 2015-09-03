@@ -17,11 +17,8 @@ angular.module('chariteerAngularApp')
           dataType: 'jsonp'
         })
         .success(function(data) {
-          controller.listOfEvents = data;
           $scope.categories = data.categories;
           $scope.events = data.events;
-          $scope.first_event = listOfEvents[0];
-          $scope.second_event = listOfEvents[1];
           $scope.organizations = data.organizations;
         });
 

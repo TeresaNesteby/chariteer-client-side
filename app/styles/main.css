@@ -117,15 +117,6 @@ nav ul {
 }
 
 /* EVENT_SEARCH ################################################
-.buttons {
-  display: inline;
-}
-.buttons-container {
- margin-top: 20px;
- border: 4px solid #C4E237;
- box-shadow: 6px 6px 2px 2px;
- margin-bottom: 20px;
-}
 
 .cat-buttons {
   color: white;
