@@ -11,11 +11,13 @@
 /*event search bar*/
 .event-search{
   margin-top: 1em;
+  background-color: #EC725A;
 }
 
 .search {
-  width: 30%;
+  width: 70%;
   margin: auto;
+  text-align: center;
 }
 
 .specific-event-box {

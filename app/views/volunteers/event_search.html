@@ -1,15 +1,14 @@
 <div class="row debug">
 
     <div class="col span-12-d debug event-search">
-      <h5>Search by Event Name:</h5>
       <div class="specific-event-box">
         <ul>
           <li ng-repeat="type in cat.categories_arr"><button ng-click="findEventsByCategoryId" >{{type.category_type}}</button></li>
         </ul>
-        <input type="text" class="form-control search" placeholder="Search" ng-model="events.searchInput" />
+        <input type="text" class="form-control search" placeholder="what event are you looking for?" ng-model="events.searchInput" />
       </div>
     </div>
-    <div class="col span-12-d debug event-search">
+    <div class="col span-12-d debug">
       <h3 class="control">Search by Category: </h3>
 
       <div class="buttons-container">
