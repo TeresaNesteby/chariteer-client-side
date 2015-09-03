@@ -4,14 +4,20 @@
 .home-container {
   text-align: center;
   border-radius: 15px;
-  margin: 40px auto;
-  border: 8px solid #9BC12A;
+  margin: 80px auto;
+  background: #9BC12A;
+  border: 10px outset #9BC12A;
   height: 350px;
   width: 350px;
 }
 
 .words {
   padding-top: 30px;
+}
+
+.purpose {
+  color: #EC725A;
+  margin-bottom: 200px;
 }
 
 .btn {
@@ -21,9 +27,9 @@
   border-style: none;
 }
 
-.org {
+.org-image {
   height: 100px;
   width: 150px;
   margin-left: 120px;
-  margin-bottom: 50px;
+  padding-bottom: 8px;
 }
