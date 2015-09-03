@@ -8,7 +8,7 @@
  * Controller of the chariteerAngularApp
  */
 angular.module('chariteerAngularApp')
-  .controller('EventsCtrl', function ($scope, $http, $log) {
+  .controller('EventsCtrl', ["$scope", "$http", "$log", function ($scope, $http, $log) {
 
     $scope.getVolunteers = function(){
       return Math.floor((Math.random()*8)+1);
@@ -42,5 +42,12 @@ angular.module('chariteerAngularApp')
             window.location = "#/categories/events/search";
           }
       });
-    }
-  });
+    };
+
+    // function to toggle the join text
+    $scope.toggle = true;
+
+    // $scope.$watch('toggle', function(){
+        // $scope.toggleJoin = $scope.toggle ? 'Join' : 'Unjoin';
+    // })
+  }]);
