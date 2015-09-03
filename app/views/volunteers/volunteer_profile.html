@@ -1,15 +1,11 @@
-
-
-
 <div class="row debug volbio">
   <div class="col span-3-d debug ">
     <img src="{{vol_first.photo_url}}" class="ddog">
   </div>
-  <div class="col span-9-d debug">
-        <p class="tx-al-l"><span class="vol-bio-header">Name:  </span>{{vol_first.first_name}} {{vol_first.last_name}} </p>
-
-         <p class="tx-al-l"><span class="vol-bio-header">Interest:  </span>{{vol_first.interest}} </p>
-        <p class="tx-al-l"><span class="vol-bio-header">Email:  </span>{{vol_first.email}}</p>
+  <div class="col span-9-d debug biowords">
+        <p class="tx-al-l">Name: <span class="vol-bio-header"> {{vol_first.first_name}} {{vol_first.last_name}} </span></p>
+         <p class="tx-al-l">Interest:  <span class="vol-bio-header"> {{vol_first.interest}} </span></p>
+        <p class="tx-al-l">Email: <span class="vol-bio-header">{{vol_first.email}} </span></p>
   </div>
 </div>
 
