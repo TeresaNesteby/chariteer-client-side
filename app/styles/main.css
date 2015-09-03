@@ -116,23 +116,6 @@ nav ul {
     box-sizing: border-box;
 }
 
-/* EVENT_SEARCH ################################################
-
-.cat-buttons {
-  color: white;
-  font-size: 20px;
-  height: 100px;
-  width: 100px;
-  margin: 30px;
-  border-radius: 50%;
-  box-shadow: 4px 4px 2px 2px;
-  background: radial-gradient(#C4E237, green);
-}
-
-.cat-buttons:hover {
-  color: green;
-}
-
  /*ADD NEW EVENT ####################*/
  .event-container {
   width: 200px;

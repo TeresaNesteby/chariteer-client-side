@@ -28,6 +28,11 @@
   border-style: none;
 }
 
+.cat-buttons:hover {
+  color: #C4E237;
+  font-weight: bolder;
+}
+
 /*event search bar*/
 .event-search{
   margin-top: 1em;
