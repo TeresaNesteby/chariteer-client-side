@@ -4,9 +4,49 @@
 }
 
 .org-bio-header {
-  font-weight: bold;
-  font-size: 18px;
   margin-left: 5px;
+}
+
+.nameeeee {
+  font-size: 28px;
+}
+
+.org-container {
+  background-color: #EC725A;
+  border-radius: 15px;
+  color: white;
+  font-size: 20px;
+  opacity: .9;
+}
+
+.profile-txt {
+  margin-top: 55px;
+  font-size: 18px;
+}
+
+.org-img {
+  max-width: 75%;
+  max-height: 75%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 50px;
+  border-radius: 10px;
+}
+
+/*.a-tag a:link, a:visited {
+  width: 100px;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: white;
+  display: block;
+  text-decoration: none;
+  text-transform: lowercase;
+}*/
+
+/*events container */
+
+.events-containerrrr {
+  border: 1px solid #bdc3c7;
 }
 
  /*ADD NEW EVENT ####################*/
