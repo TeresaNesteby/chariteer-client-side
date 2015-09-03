@@ -57,6 +57,7 @@
   border: 1px solid #bdc3c7;
   width: 80%;
   margin: 0 auto;
+  padding: 1em;
 }
 
 .event-imgs {
@@ -68,13 +69,17 @@
   width: 300px;
   height: 310px;
   margin: 0 auto;
-  opacity: .8
+  opacity: .8;
+  margin-bottom: 10px;
+  border-style: none;
  }
 
  .new-event-box {
   background-color: #bdc3c7;
   box-shadow: 5px 5px #EC725A;
   border-style: none;
+  margin-top: 50px;
+  margin-bottom: 30px;
  }
 
  .new-eventtt {
@@ -93,15 +98,16 @@
   border-style: none;
   height: 180px;
   width: 180px;
-  margin: 5px 60px;
+  margin-top: 20px;
+  margin-left: 50px;
   font-size: 150px;
+  line-height: 5px;
   background-color: #bdc3c7;
   color: white;
  }
 
  .plus-format:hover {
-  font-size: 120px;
-  text-align: center;
+  font-size: 190px;
  }
 
  .event-update-button {
@@ -131,8 +137,12 @@
   font-size: 22px;
   font-weight: bold;
   padding: 5px;
-  border: 1px solid blue;
+  width: 90%;
   text-align: center;
+}
+
+.top {
+  margin-top: 60px;
 }
 
 .event-txtttt {
