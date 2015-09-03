@@ -326,3 +326,22 @@ img {
   width: 60%;
 }
 
+.login-button {
+  margin-right: auto;
+  margin-left: auto;
+
+}
+.loginheader {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 90px;
+}
+
+.volsignup {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 90px;
+}
+.volsingupbutton {
+  text-align: center;
+}
