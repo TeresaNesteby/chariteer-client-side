@@ -8,3 +8,50 @@
   font-size: 18px;
   margin-left: 5px;
 }
+
+.volprofile-banner {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  line-height: 15px;
+  background-color: #EC725A;
+}
+
+.volbio {
+  background-color: #EC725A;
+  border-radius: 15px;
+  color: white;
+  font-size: 15px;
+/*  border: 2px solid #BDC3C7;
+*/}
+
+.volbio-events {
+  border: 1px solid #BDC3C7;
+  height: 400px;
+  margin-bottom: 15px;
+  margin-right: 20px;
+  border-radius: 15px;
+}
+
+.volunteer {
+  padding-bottom: 5px;
+}
+.volimg {
+  max-width: 60%;
+  max-height: 60%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.ddog {
+  max-width: 75%;
+  max-height: 75%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 50px;
+  border-radius: 10px;
+}
+
+
+
+
+

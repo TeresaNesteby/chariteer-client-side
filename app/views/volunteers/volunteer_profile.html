@@ -1,32 +1,32 @@
-<h2>Volunteer Profile</h2>
 
-<div class="row debug">
-  <div class="col span-3-d debug">
-    <img src="{{vol_first.photo_url}}">
+
+
+<div class="row debug volbio">
+  <div class="col span-3-d debug ">
+    <img src="{{vol_first.photo_url}}" class="ddog">
   </div>
   <div class="col span-9-d debug">
         <p class="tx-al-l"><span class="vol-bio-header">Name:  </span>{{vol_first.first_name}} {{vol_first.last_name}} </p>
 
          <p class="tx-al-l"><span class="vol-bio-header">Interest:  </span>{{vol_first.interest}} </p>
-
         <p class="tx-al-l"><span class="vol-bio-header">Email:  </span>{{vol_first.email}}</p>
-
   </div>
 </div>
-<h3>Upcoming Events That You have Registered For:</h3>
+
+<div class="container">
+<h3 class="volunteer">Upcoming Events That You have Registered For:</h3>
   <div ng-controller="EventsCtrl">
- <div class="col span-6-d debug" ng-repeat="event in events">
- <div style="color: blue">
-    <div class="logo-container">
-      <img src="{{event.image}}">
+ <div class="col span-4-d debug bio" ng-repeat="event in events">
+ <div class="volbio-events">
+    <div class="vollogo-container">
+      <img src="{{event.image}}" class="volimg">
     </div>
     <h5>{{event.name}}</h5>
     <p>Organization:{{event.org_name}}</p>
     <p>Date: event.date</p>
     <p>Time: {{event.time}}</p>
-    <p>Location: {{event.place}}</p>
+  </div>
 </div>
 </div>
 </div>
-
 
