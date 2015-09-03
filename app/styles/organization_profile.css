@@ -9,7 +9,6 @@
   margin-left: 5px;
 }
 
-
  /*ADD NEW EVENT ####################*/
  .event-container {
   width: 200px;
@@ -17,24 +16,44 @@
   margin: 0 auto;
  }
 
+ .new-event-box {
+  background-color: #EC725A;
+  box-shadow: 5px 5px #bdc3c7;
+  border-style: none;
+ }
+
  .new-eventtt {
   font-size: 18px;
+  color: white;
+  background-color:  #EE9C69;
+  text-align: center;
+  width: 60%;
+  border-radius: 3%;
+  margin: 0 auto;
  }
 
  .plus-format {
-  margin-top: 10px;
-  margin-left: 40px;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  opacity: 0.6;
-  text-align: center;
-  color: black;
-  font-size: 30px;
+  border-style: none;
+  font-size: 20px;
+  background-color: #EC725A;
+  color: white;
+ }
+
+ .plus-format:hover {
+  font-size: 40px;
  }
 
  .event-update-button {
-  font-size: 15px;
-  margin: 20px auto 20px auto;
-  border-style: none;
+  font-size: 14px;
  }
+
+ /*dfzsdfszfsafds*/
+/*.buttons {
+  display: inline;
+  margin-right: 10px;
+}
+.buttons-container {
+ margin-top: 20px;
+ margin-bottom: 20px;
+}*/
+
