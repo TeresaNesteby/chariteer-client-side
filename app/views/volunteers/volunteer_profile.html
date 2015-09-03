@@ -1,28 +1,37 @@
-<div class="row debug volbio">
+
+<div class="row debug volbio ">
   <div class="col span-3-d debug ">
     <img src="{{vol_first.photo_url}}" class="ddog">
   </div>
-  <div class="col span-9-d debug biowords">
-        <p class="tx-al-l">Name: <span class="vol-bio-header"> {{vol_first.first_name}} {{vol_first.last_name}} </span></p>
-         <p class="tx-al-l">Interest:  <span class="vol-bio-header"> {{vol_first.interest}} </span></p>
-        <p class="tx-al-l">Email: <span class="vol-bio-header">{{vol_first.email}} </span></p>
+  <div class="col span-9-d debug biowords profile-txt">
+        <p class="tx-al-l vol-bio-header-name  "> {{vol_first.first_name}} {{vol_first.last_name}} </p>
+        <p class="tx-al-l vol-bio-header">pparams@dbc.com  </p>
+        <p>  </p>
+         <p class="tx-al-l vol-bio-header">Interests: HTTP status cats, recursive unicorns, airwheels</p>
+        <p class="tx-al-l vol-bio-header">Certifications: Banana Debugger, Pizza Vulture</p>
+        <p class="tx-al-l vol-bio-header">Experience: Ping-Pong Ball Boy  </p>
+
   </div>
 </div>
 
-<div class="container">
 <h3 class="volunteer">Upcoming Events That You have Registered For:</h3>
-  <div ng-controller="EventsCtrl">
+<div class="container">
+<div ng-controller="EventsCtrl">
  <div class="col span-4-d debug bio" ng-repeat="event in events">
- <div class="volbio-events">
-    <div class="vollogo-container">
-      <img src="{{event.image}}" class="volimg">
+    <div class="volbio-events">
+      <div class="vollogo-container">
+        <img src="{{event.image}}" class="volimg">
+      </div>
+        <div class="volevent-info">
+          <h5>{{event.name}}</h5>
+          <p>Organization: {{event.org_name}}</p>
+          <p>Date: {{event.date}}</p>
+          <p>Time: {{event.time}}</p>
+        </div>
+      </div>
     </div>
-    <h5>{{event.name}}</h5>
-    <p>Organization: {{event.org_name}}</p>
-    <p>Date: {{event.date}}</p>
-    <p>Time: {{event.time}}</p>
   </div>
 </div>
-</div>
-</div>
+
+
 
