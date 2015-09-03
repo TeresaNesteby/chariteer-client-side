@@ -9,13 +9,8 @@
  */
 angular.module('chariteerAngularApp')
   .controller('VolunteersCtrl', function ($scope, $http) {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
 
-  var controller = this;
+    var controller = this;
     $http({
       method: 'GET',
       url: 'http://localhost:3000/api/volunteers',

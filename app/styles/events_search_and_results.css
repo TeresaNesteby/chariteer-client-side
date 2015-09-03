@@ -1,5 +1,9 @@
 /*header*/
-
+.container-search {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
 
 
 /*category buttons*/
@@ -23,9 +27,15 @@
   margin: 0 auto;
   font-size: 14px;
   vertical-align: middle;
-  background-color: #bdc3c7;
-  color: black;
+  background-color: #EC725A;
+  color: white;
   border-style: none;
+}
+
+.cat-buttons:hover {
+  color: white;
+  font-size: 16px;
+  font-weight: bolder;
 }
 
 /*event search bar*/
@@ -37,6 +47,7 @@
 .search {
   width: 70%;
   margin: auto;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -48,7 +59,6 @@
 /*is there anywhere besides search page?*/
 .control {
   margin-top: 1em;
-  border: 1px solid blue;
 }
 
 /*results*/
@@ -56,29 +66,56 @@
   margin-top: 1em;
 }
 
+.event-info-h {
+  font-weight: bold;
+  text-align: left;
+  font-size: 14px;
+}
+
+.text-l {
+  text-align: left;
+  margin-left: 70px;
+}
+
+/*super cool font to maybe use*/
+/*.event-font {
+  font-family: 'Raleway Dots', cursive;
+}*/
+
+#num-size {
+  font-size: 30px;
+  color: #EC725A;
+}
+
 .upcoming {
-  border: 2px solid #cccccc;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  border: 1px solid #cccccc;
+  margin: 18px auto;
+  width: 80%;
+  border-radius: 15px;
 }
 
  .logo-container {
-  width: 100px;
-  height: 100px;
+  width: 60%;
+  height: 60%;
   margin: 20px auto;
  }
 
 /*buttons to RSVP*/
  .im-in {
-  height: 50px;
-  width: 50px;
+  height: 65px;
+  width: 123px;
   margin: 30px;
-  border-radius: 5px;
-  box-shadow: 4px 4px 2px 2px green;
-  background: #C4E237;
+  color: white;
+  font-size: 21px;
+  border-style: none;
+  box-shadow: 5px 5px #bdc3c7;
+  background: #EC725A;
+  margin: 65px auto;
+  border-radius: 10px;
 }
 
 .im-in:hover {
-  height: 60px;
-  width: 60px;
+  height: 65px;
+  width: 123px;
+  font-size: 35px;
 }

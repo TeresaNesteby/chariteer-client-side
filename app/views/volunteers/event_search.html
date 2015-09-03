@@ -8,8 +8,10 @@
         <input type="text" class="form-control search" placeholder="what event are you looking for?" ng-model="events.searchInput" />
       </div>
     </div>
+
+    <div class="container">
     <div class="col span-12-d debug">
-      <h3 class="control">how would you like to contribute?</h3>
+      <h3 class="control">contribute</h3>
 
       <div class="buttons-container">
         <div class="buttons" ng-repeat='category in categories'>
@@ -19,9 +21,10 @@
     </div>
 
     <div class="col span-12-d debug events-results">
-      <h3>Upcoming Events: </h3>
+      <h3>Places to Volunteer </h3>
       <h5>find your next opportunity to build up the community</h5>
     </div>
+  </div>
 
     <div class="row upcoming debug" ng-repeat="event in events | filter:events.searchInput | filter: {category_id: events.categoryId}" >
       <div class="col span-3-d debug">
@@ -31,14 +34,19 @@
       </div>
 
       <div class="col span-6-d debug">
-        <h3>{{event.name}}</h3>
-        <p>{{event.org_name}}</p>
-        <p>Date: {{event.date}}</p>
-        <p>Time: {{event.time}}</p>
-        <p>Location: {{event.place}}</p>
+        <h4>{{event.name}}</h4>
+        <div class="text-l">
+          <p>We need: <span id="num-size">{{ getVolunteers() }}</span> volunteers</p>
+          <p>Organization:<span class="event-info-h">{{event.org_name}}</span></p>
+          <p>Date:<span class="event-info-h">{{event.date}}</span></p>
+          <p>Time:<span class="event-info-h">{{event.time}}</span></p>
+          <p>Location:<span class="event-info-h">{{event.place}}</span></p>
+        </div>
       </div>
 
       <div class="col span-3-d debug">
-        <button class="im-in">I'm in!</button>
+        <button class="im-in">Join</button>
       </div>
     </div>
+
+  </div>
