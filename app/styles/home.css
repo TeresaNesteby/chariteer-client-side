@@ -4,29 +4,42 @@
 .home-container {
   text-align: center;
   border-radius: 15px;
+  position: absolute;
+  top: 200px;
   margin: 80px auto;
-  background: #9BC12A;
-  border: 10px outset #9BC12A;
+  border: 10px outset #EC725A;
   height: 350px;
   width: 350px;
+  z-index: 10;
 }
 
+/*words in home-containers*/
 .words {
   padding-top: 30px;
 }
 
+/*phrase at top*/
 .purpose {
-  color: #EC725A;
-  margin-bottom: 200px;
-}
+  color: white;
+  position: absolute;
+  top: 75px;
+  left: 250px;
+  z-index: 10;
+  }
 
+/*buttons*/
 .btn {
   font-size: 21px;
-  margin: 20px auto 20px auto;
-  background-color: #C4E237;
+  margin: 20px;
+  background-color: #EE9C69;
   border-style: none;
 }
 
+.btn:hover {
+  background-color: #EC725A;
+}
+
+/*Clip art*/
 .org-image {
   height: 100px;
   width: 150px;
