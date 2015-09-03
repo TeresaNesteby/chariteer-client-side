@@ -1,5 +1,9 @@
 /*header*/
-
+.container-search {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
 
 
 /*category buttons*/
@@ -43,6 +47,7 @@
 .search {
   width: 70%;
   margin: auto;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -83,9 +88,10 @@
 }
 
 .upcoming {
-  border: 2px solid #cccccc;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  border: 1px solid #cccccc;
+  margin: 18px auto;
+  width: 80%;
+  border-radius: 15px;
 }
 
  .logo-container {
@@ -96,16 +102,20 @@
 
 /*buttons to RSVP*/
  .im-in {
-  height: 50px;
-  width: 50px;
+  height: 65px;
+  width: 123px;
   margin: 30px;
   color: white;
+  font-size: 21px;
   border-style: none;
   box-shadow: 5px 5px #bdc3c7;
   background: #EC725A;
+  margin: 65px auto;
+  border-radius: 10px;
 }
 
 .im-in:hover {
-  height: 60px;
-  width: 60px;
+  height: 65px;
+  width: 123px;
+  font-size: 35px;
 }

@@ -17,8 +17,20 @@
   margin: 0 auto;
  }
 
+ .new-event-box {
+  background-color: #EC725A;
+  box-shadow: 5px 5px #bdc3c7;
+  border-style: none;
+ }
+
  .new-eventtt {
   font-size: 18px;
+  color: white;
+  background-color:  #EE9C69;
+  text-align: center;
+  width: 60%;
+  border-radius: 3%;
+  margin: 0 auto;
  }
 
  .plus-format {
