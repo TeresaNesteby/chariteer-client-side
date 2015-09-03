@@ -18,7 +18,6 @@ angular.module('chariteerAngularApp')
       password: $scope.password
     })
   .then(function(login_response) {
-    console.log("TOKEN HAS BEEN CREATED: ", login_response.data.volunteer.token)
     if (login_response.data.volunteer.token === "OK") {
     	$scope.redirect = function() {
     		$scope.ifLogIn = true;
@@ -29,10 +28,3 @@ angular.module('chariteerAngularApp')
   }
 
 }]);
-
-// <button ng-click="redirect()">Click</button>
-// In JS,
-
-// $scope.redirect = function(){
-//   window.location = "#/page.html";
-// }
