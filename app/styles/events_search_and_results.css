@@ -25,7 +25,7 @@
   overflow: hidden;
   text-align: center;
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 19px;
   vertical-align: middle;
   background-color: #EC725A;
   color: white;
@@ -40,15 +40,18 @@
 
 /*event search bar*/
 .event-search{
-  margin-top: 1em;
+  height: 200px;
   background-color: #EC725A;
+
 }
 
 .search {
   width: 70%;
-  margin: auto;
-  font-size: 20px;
+  margin: 65px auto;
+  font-size: 30px;
   text-align: center;
+  height: 50px;
+
 }
 
 .specific-event-box {
@@ -69,14 +72,17 @@
 .event-info-h {
   font-weight: bold;
   text-align: left;
-  font-size: 14px;
+  font-size: 40px;
 }
 
 .text-l {
   text-align: left;
   margin-left: 70px;
+  font-size: 25px;
 }
-
+.event-name {
+  text-align: center;
+}
 /*super cool font to maybe use*/
 /*.event-font {
   font-family: 'Raleway Dots', cursive;
