@@ -23,13 +23,14 @@
         </div>
       </div>
     </div>
-
-    <div class="col span-12-d debug events-results">
-      <h1 class="control">Places to Volunteer </h1>
-      <h3>find your next opportunity to build up the community</h3>
-    </div>
   </div>
 
+    <div class="col span-12-d debug grey-bground events-results">
+      <h1 class="control">Places to Volunteer</h1>
+      <h3 id="opportunity-align">find your next opportunity to build up the community</h3>
+    </div>
+  </div>
+  <div class="col span-12-d grey-bground">
     <div class="row upcoming debug" ng-repeat="event in events | filter:events.searchInput | filter: {category_id: events.categoryId}" >
       <div class="col span-3-d debug">
         <div class="logo-container">

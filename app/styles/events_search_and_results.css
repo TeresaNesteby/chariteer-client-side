@@ -50,13 +50,13 @@
   color: white;
   font-size: 16px;
   font-weight: bolder;
+  padding-bottom: 20px;
+
 }
 
 /*event search bar*/
 .event-search{
   height: 100px;
-  /*background-color: #853631;*/
-
 }
 
 .search {
@@ -75,10 +75,15 @@
 
 /*is there anywhere besides search page?*/
 .control {
-
   color: black;
   font-size: 80px;
+  color: black;
+  text-align: center;
+}
 
+#opportunity-align {
+  text-align: center;
+  font-size: 28px;
 }
 
 #title-spacing{
@@ -89,19 +94,33 @@
   margin-top: 1em;
 }
 
+/*.place-background {
+  background-color: #4B77BE;
+  opacity: .4;
+  width: 100%;
+}*/
+
+.grey-bground {
+  background-color: #cccccc;
+  /*opacity: .3;*/
+}
+
 .event-info-h {
   font-weight: bold;
   text-align: left;
-  font-size: 40px;
+  font-size: 36px;
 }
 
 .text-l {
   text-align: left;
-  margin-left: 70px;
+  margin-left: 30px;
   font-size: 25px;
 }
 .event-name {
   text-align: center;
+  font-weight: 900;
+  font-size: 45px;
+
 }
 /*super cool font to maybe use*/
 /*.event-font {
@@ -114,7 +133,7 @@
 }
 
 .upcoming {
-  border: 1px solid #cccccc;
+  border: 3px solid #4B77BE;
   margin: 18px auto;
   width: 80%;
   border-radius: 15px;
@@ -132,10 +151,10 @@
   width: 123px;
   margin: 30px;
   color: white;
-  font-size: 21px;
+  font-size: 35px;
   border-style: none;
   box-shadow: 5px 5px #bdc3c7;
-  background: #EC725A;
+  background: #4B77BE;
   margin: 65px auto;
   border-radius: 10px;
 }
