@@ -1,15 +1,25 @@
 * {
   margin: 0;
 }
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('Mathlete-Skinny.otf'); /* IE9 Compat Modes */
+}
+@font-face{
+  font-family: 'Logo';
+  src: url('Boogaloo-Regular.otf');
 
+}
 html {
   height: 100%;
+
 }
 
 body {
   padding: 0;
-  font-family: "Lato", sans-serif;
-  height: 100%;
+  font-family: 'MyWebFont';
+/*  font-family: "Lato", sans-serif;
+*/  height: 100%;
 }
 
 .wrapper {
@@ -45,7 +55,7 @@ nav ul {
 }
 
 #logo {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Logo';
   font-size: 70px;
   color: white;
   width: 300px;
@@ -59,7 +69,7 @@ nav ul {
 
 .nav-right-a a:link, a:visited {
   width: 100px;
-  font-family: "Lato", sans-serif;
+  font-family: 'MyWebFont', "Lato", sans-serif;
   font-size: 30px;
   color: white;
   display: block;
