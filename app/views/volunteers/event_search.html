@@ -1,6 +1,9 @@
 <div class="row debug">
-
-    <div class="col span-12-d debug event-search">
+<div class="col span-12-d debug background-image-container">
+  <img ng-src="../images/bimage.jpg" class="sfbackground"/>
+  <h1 class="home-title">Volunteer</h1>
+</div>
+      <div class="col span-12-d debug event-search">
       <div class="specific-event-box">
         <ul>
           <li ng-repeat="type in cat.categories_arr"><button ng-click="findEventsByCategoryId" >{{type.category_type}}</button></li>
@@ -9,9 +12,10 @@
       </div>
     </div>
 
+
     <div class="container">
     <div class="col span-12-d debug">
-      <h1 class="control">Choose a cause to support</h1>
+      <h1 class="control" id='title-spacing'>Choose a cause to support</h1>
 
       <div class="buttons-container">
         <div class="buttons" ng-repeat='category in categories'>
@@ -21,7 +25,7 @@
     </div>
 
     <div class="col span-12-d debug events-results">
-      <h1>Places to Volunteer </h1>
+      <h1 class="control">Places to Volunteer </h1>
       <h3>find your next opportunity to build up the community</h3>
     </div>
   </div>
