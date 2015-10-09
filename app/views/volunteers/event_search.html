@@ -1,6 +1,9 @@
 <div class="row debug">
-
-    <div class="col span-12-d debug event-search">
+<div class="col span-12-d debug background-image-container">
+  <img ng-src="../images/bimage.jpg" class="sfbackground"/>
+  <h1 class="home-title">Volunteer</h1>
+</div>
+      <div class="col span-12-d debug event-search">
       <div class="specific-event-box">
         <ul>
           <li ng-repeat="type in cat.categories_arr"><button ng-click="findEventsByCategoryId" >{{type.category_type}}</button></li>
@@ -9,9 +12,10 @@
       </div>
     </div>
 
+
     <div class="container">
     <div class="col span-12-d debug">
-      <h3 class="control">contribute</h3>
+      <h1 class="control" id='title-spacing'>Choose a cause to support</h1>
 
       <div class="buttons-container">
         <div class="buttons" ng-repeat='category in categories'>
@@ -19,13 +23,14 @@
         </div>
       </div>
     </div>
-
-    <div class="col span-12-d debug events-results">
-      <h3>Places to Volunteer </h3>
-      <h5>find your next opportunity to build up the community</h5>
-    </div>
   </div>
 
+    <div class="col span-12-d debug grey-bground events-results">
+      <h1 class="control">Places to Volunteer</h1>
+      <h3 id="opportunity-align">find your next opportunity to build up the community</h3>
+    </div>
+  </div>
+  <div class="col span-12-d grey-bground">
     <div class="row upcoming debug" ng-repeat="event in events | filter:events.searchInput | filter: {category_id: events.categoryId}" >
       <div class="col span-3-d debug">
         <div class="logo-container">
@@ -34,13 +39,12 @@
       </div>
 
       <div class="col span-6-d debug">
-        <h4>{{event.name}}</h4>
+        <h1 class="event-name">{{event.name}}</h1>
         <div class="text-l">
-          <p>We need: <span id="num-size">{{ event.num_of_volunteers_needed }}</span> volunteers</p>
-          <p>Organization:<span class="event-info-h">{{event.org_name}}</span></p>
-          <p>Date:<span class="event-info-h">{{event.date}}</span></p>
-          <p>Time:<span class="event-info-h">{{event.time}}</span></p>
-          <p>Location:<span class="event-info-h">{{event.place}}</span></p>
+          <p>Organization: <span class="event-info-h">{{event.org_name}}</span></p>
+          <p>Date: <span class="event-info-h">{{event.date}}</span></p>
+          <p>Time: <span class="event-info-h">{{event.time}}</span></p>
+          <p>Location: <span class="event-info-h">{{event.place}}</span></p>
         </div>
       </div>
 

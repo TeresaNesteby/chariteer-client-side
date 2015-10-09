@@ -11,7 +11,7 @@ angular.module('chariteerAngularApp')
   .controller('OrganizationsCtrl', ['$scope', '$http', function ($scope, $http) {
     $scope.banana="organization 1";
 
-    // var controller = this;
+    var controller = this;
     $http({
       method: 'GET',
       url: 'http://localhost:3000/api/organizations',
@@ -23,6 +23,19 @@ angular.module('chariteerAngularApp')
       $scope.events = response.events;
       $scope.eventsForOrg = $scope.getEventsByOrg($scope.events, 1);
     });
+
+ //    $http({
+ //      method: 'GET',
+ //      url: 'http://www.stage.volunteermatch.org/api/call?action=searchOrganizations',
+ //      headers: {
+ //   "organizationType":["public","private"]
+ // },
+ //      dataType: 'jsonp'
+ //    })
+ //    .success(function(response){
+ //      $scope.test = response;
+ //      console.log(response);
+ //    })
 
   $scope.signUp = function() {
     $http.post('http://localhost:3000/api/organizations', {
@@ -54,5 +67,5 @@ angular.module('chariteerAngularApp')
     return events_arr;
   };
 
-  
+
 }]);

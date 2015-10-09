@@ -1,10 +1,24 @@
 /*header*/
+
 .container-search {
     width: 100%;
     margin: 0 auto;
     text-align: center;
 }
+.sfbackground {
+  width: 100%;
+  height: 650px;
+  z-index: -1;
+  position: absolute;
 
+}
+.home-title {
+  color: white;
+  text-align: center;
+  position: relative;
+  font-size: 150px;
+/*  z-index: 1;*/
+}
 
 /*category buttons*/
 .buttons {
@@ -25,9 +39,9 @@
   overflow: hidden;
   text-align: center;
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 19px;
   vertical-align: middle;
-  background-color: #EC725A;
+  background-color: #4B77BE;
   color: white;
   border-style: none;
 }
@@ -36,19 +50,22 @@
   color: white;
   font-size: 16px;
   font-weight: bolder;
+  padding-bottom: 20px;
+
 }
 
 /*event search bar*/
 .event-search{
-  margin-top: 1em;
-  background-color: #EC725A;
+  height: 100px;
 }
 
 .search {
   width: 70%;
-  margin: auto;
-  font-size: 20px;
+  margin: 65px auto;
+  font-size: 30px;
   text-align: center;
+  height: 50px;
+
 }
 
 .specific-event-box {
@@ -58,25 +75,53 @@
 
 /*is there anywhere besides search page?*/
 .control {
-  margin-top: 1em;
+  color: black;
+  font-size: 80px;
+  color: black;
+  text-align: center;
 }
 
+#opportunity-align {
+  text-align: center;
+  font-size: 28px;
+}
+
+#title-spacing{
+  margin-top: 5em;
+}
 /*results*/
 .events-results {
   margin-top: 1em;
 }
 
+/*.place-background {
+  background-color: #4B77BE;
+  opacity: .4;
+  width: 100%;
+}*/
+
+.grey-bground {
+  background-color: #cccccc;
+  /*opacity: .3;*/
+}
+
 .event-info-h {
   font-weight: bold;
   text-align: left;
-  font-size: 14px;
+  font-size: 36px;
 }
 
 .text-l {
   text-align: left;
-  margin-left: 70px;
+  margin-left: 30px;
+  font-size: 25px;
 }
+.event-name {
+  text-align: center;
+  font-weight: 900;
+  font-size: 45px;
 
+}
 /*super cool font to maybe use*/
 /*.event-font {
   font-family: 'Raleway Dots', cursive;
@@ -88,7 +133,7 @@
 }
 
 .upcoming {
-  border: 1px solid #cccccc;
+  border: 3px solid #4B77BE;
   margin: 18px auto;
   width: 80%;
   border-radius: 15px;
@@ -106,10 +151,10 @@
   width: 123px;
   margin: 30px;
   color: white;
-  font-size: 21px;
+  font-size: 35px;
   border-style: none;
   box-shadow: 5px 5px #bdc3c7;
-  background: #EC725A;
+  background: #4B77BE;
   margin: 65px auto;
   border-radius: 10px;
 }

@@ -26,9 +26,9 @@ angular.module('chariteerAngularApp', [
   .config(function ($routeProvider) {
     $routeProvider
       .when('/main', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+        templateUrl: 'views/volunteers/event_search.html',
+        controller: 'EventsCtrl',
+        controllerAs: 'events'
       })
       .when('/main/new', {
         templateUrl: 'views/main/new.html',
